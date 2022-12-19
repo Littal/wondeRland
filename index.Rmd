@@ -7,14 +7,4 @@ site: bookdown::bookdown_site
 
 # Introduction
 
-**"…and what is the use of a book," thought Alice, "without pictures or conversations?"** 
-~ L. Carroll, Alice's Adventures in Wonderland
-
-But this book is entirely made up of conversation, and for better conversation! It is targeted at HR leaders who practice or aspire to practice People Analytics and intend to do so by having better conversations with data scientists. It offers my experience as a data scientist in discussions with HR leaders I supported on their journey to data-driven organizations.
-
-Inspired by the famous book Alice's Adventure in Wonderland, I gathered many pieces of knowledge that comprise my story. My career was always on the spectrum between people and businesses, and data mediates between these two poles. The use cases I present will show you how. In addition, it will support your learning in my training programs or others, leveraging available datasets that demonstrate how you communicate with a data scientist who happens to use R and RStudio. 
-
-This book is unique in the domain of People Analytics because it interwinds two well-known conceptual models: "Employee Lifetime Value" and "Analytics Maturity." Combining both conceptual models enables a thorough understanding of real People Analytics projects. Furthermore, I did not create the simulations to make HR professionals become data scientists but rather to train them to work with data scientists. Therefore, each use case follows similar steps that enable simulating a conversation with a data scientist. 
-
-**"Oh, I've had such a curious dream!" said Alice, and she told her sister, as well as she could remember them, all these strange adventures… **
-But our adventure is certainly not a dream! Let's Start.
+text
