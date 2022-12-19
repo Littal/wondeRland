@@ -5,4 +5,4 @@ edit: https://github.com/Littal/wondeRland/edit/master/%s
 view: https://github.com/Littal/wondeRland/blob/master/%s
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: ""
