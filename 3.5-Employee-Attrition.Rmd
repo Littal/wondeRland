@@ -1,0 +1,3 @@
+## Employee Attrition
+
+(Predictive analytics, Logistic Regression)

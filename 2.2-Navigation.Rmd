@@ -1,0 +1,59 @@
+## Navigation
+
+If you take your first steps in wondeRland, you must have a few navigation tools. First, you must be acquainted with the basic R syntax. Then, you better understand how to leverage the basic R code with functions of the suitable packages. In addition, you need to organize your data, scripts, outputs, and other resources in your development environment. Lastly, you should always know where to get help when you need it.
+
+This section lists all those navigation tools but does not offer a tutorial for any of them. Instead, it refers to some other open books. However, there are endless resources online, including tutorials, articles, and posts on online forums. So when you go on the adventure of writing code, Google is always your best companion. But remember to add "R" to your search query to restrict it to relevant results.
+
+
+
+### R code
+
+I think that this is the boring part of your journey. By itself, programming is not enjoyable for most professionals in the domain of people. However, dirtying my hands in writing code enabled me to tackle some challenges, as you will read in the use cases in the book's third part. You can screen into the R code to see how I approached them. Your motivation to do so may be better communication with the data scientist that supports your work. 
+
+Like all programming languages, R has its syntax. But its grammar is relatively easy, and its documentation can help you follow the steps of the data science processes. Therefore, I believe your acquaintance with it will support your interactions with data professionals. 
+
+In his Handbook of Regression Modeling in People Analytics, Keith McNulty offered an excellent [review of R](https://peopleanalytics-regression-book.org/the-basics-of-the-r-programming-language.html). It covers the basics of R, allowing the inexperienced reader to have some orientation. This review explains all the basics you need: data types and structures in R; the basics of functions and visualizations; and how to handle errors and warnings messages.
+
+
+
+### R Packages
+
+The R programming language is open-source, i.e., people contribute free packages (currently [more than 18,000](https://cran.r-project.org/web/packages/)) that make R so powerful, enabling users to do anything in it. Each R package contains functions and documentation for a specific use. It solves a particular problem for the user. Furthermore, all Packages are standardized to allow you to install and use them in your programming environment.
+
+To demonstrate installing and loading R packages and to dismiss the confusion about R packages, Ismay and Kim, the authors of the book [Statistical Inference via Data Science](https://moderndive.com/index.html), used the analogy of apps and mobile phones. R is like a new mobile phone, which has a few features when you use it for the first time. But it doesn't have everything the user wants or needs. So, R packages are just like apps users can download onto their mobile.
+
+Most packages are not installed by default when R and RStudio are installed. So to use the R package for the first time, the user must install it first. Then the user needs to load it each time RSudio is started, just like opening an app on a mobile phone.
+
+Similar to apps on mobile phones, downloading and loading R packages is not the end of the story because the user needs to download updates from time to time. 
+
+
+
+### Your IDE
+
+When I present screenshots of my work in R-Studio to my workshop participants, I have a single objective: dismissing the mystery of a data scientist's desktop. If more people become keen users of this IDE, I would consider it a pleasant side effect of my endeavor to enhance communication between HR professionals and date professionals.
+
+To explain what I do on R-Studio, I use the analogy of a cake recipe. A good recipe includes a list of ingredients, precise instructions on how to use them, a description of the expected outcomes, and a pleasant and delicious visual display. Of course, R-Studio includes so much more, but let's stick to the analysis recipe for simplicity.
+
+This paragraph is not a tutorial for R-Studio, but rather a general orientation in your navigation. Therefore I mention only some windows in R-Studio, which I picked according to their relevance to the analysis recipe:
+
+* The environment window includes the ingredients of the recipe: datasets you have opened, new variables you have created, and any other defined objects you make and use during cooking.
+ 
+* The script window includes tabs of code in different formats. These code tabs serve as the exact cooking instructions. In addition, they enable you to run, document, and repeat the analysis. 
+
+* Consider the console window a fast oven, where the code runs and outputs are created. 
+
+* The final result may be presented visually as a delicious display in the viewer window.
+
+Explore R-Studio's [endless learning resources](https://education.rstudio.com/learn/beginner/) if you want to learn it from scratch. Otherwise, the analysis recipe is completed and served in the book's third part. Bon-appetite!
+
+
+### Getting Help
+
+Whenever I got stuck using R, Google was my friend. Every error message I googled eventually revealed a resource for resolution because I was not the first to tackle it. However, if you search for help on Google, keep in mind two things: First, you must add "R" to your query to ensure the results are relevant. Secondly, if the search isn't helpful, it may mean your question is not precise enough, so you should try rephrasing it.
+
+Sometimes your Google search results include [Stackoverflow](https://stackoverflow.com/questions/tagged/r) questions. The questions and answers on this platform may consist of reproducible examples. In such examples, following the code and data is usually the quick way to resolve your issues. In addition, votes on questions and answers are helpful. 
+
+Other times Google search results include articles from [R-bloggers](https://www.r-bloggers.com/). This website aggregates hundreds of blogs about R. Some blogs may contain the answers you need. But it is only one resource of the vast community of R users and developers. I recommend following other activities of the R community to broaden your perspective on the problems you face.
+
+However, before searching for help outside your IDE, I suggest you try to [help yourself](https://www.r-project.org/help.html) with R documentation and help tools. Navigating function documentation is a must because there is no way to remember all parameters and options to twig a function. Essentially it is also hard to remember all the functions in each library. Therefore I recommend getting to know and using [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/).  
+

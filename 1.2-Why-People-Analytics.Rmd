@@ -1,0 +1,15 @@
+## Why People Analytics
+
+The practice of data science is multidisciplinary. It encompasses three general skills – the business domain of expertise, statistical modeling, and programming. Although I used the term Applied Research for most of my career to describe my practice, I experienced the complexity of the data science profession.
+
+I have been a consultant in Organizational Research for more than twenty years, long before "People Analytics" emerged. I offered insights into employee experience, performance measures, collaboration, internal customer satisfaction, safety climate, training assessments, etc. To do so, I had to leverage multidisciplinary skills.
+
+I considered my practice a career on a spectrum between people and businesses. Data mediates between these two poles because you reveal every action or transaction between people and companies through the data.
+
+I had to be an expert in many organizational use cases while analyzing them by the proper methodology and write my analysis as code for reproducibility, which contributed to the profitability of my small business. Therefore, I was a data scientist, and my projects, which served executives in Human resources, were People Analytics projects, i.e., the data science of HR.
+
+People Analytics is still a new and growing field. As such, it encounters obstacles and barriers. I think that there is a vicious circle in this field. On the one hand, data literacy among HR professionals is insufficient. On the other hand, there is inadequate open data and use case demos for learning.
+
+I developed learning programs in People Analytics to overcome this vicious circle in recent years. I leveraged the handful of open data sets and created learning materials that included domain expertise, research methodology, and code. I incorporated most of these learning materials in this book. 
+
+Though powerful, the use of R in HR is surprisingly uncommon. So before diving into People Analytics use cases, my choice to use R and my source of inspiration in open-source culture is worth explaining. 

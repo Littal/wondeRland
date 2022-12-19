@@ -1,0 +1,14 @@
+## Why R and Rstudio?
+
+I have used SPSS and other statistics and analytics software for over twenty years. Then, one day, a former client mentioned that I should have abandoned them and started using R.
+
+Curious and confused, I googled it. Then I downloaded R for free and followed recommendations to use [RStudio](https://www.rstudio.com/) as my programming environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)), again for free. Next, I searched for some additional resources and thought I should give it a try. It took me only a few weeks to discover huge advantages. 
+
+First, I was happy to discover that my learning was fast and pleasant. My background in statistics and programming made it relatively easy for me to adapt. Furthermore, the endless resources I found online were a significant tailwind. Indeed, I owe much of my progress to R communities and the open-source culture. When I searched for advanced learning programs and more structured learning paths, I could choose from various affordable programs online created by leading universities and professional experts. 
+
+Secondly, I could do anything I knew and embrace new tricks quickly and completely free. Soon enough, I discovered the vast ecosystem of libraries. I could pick the right ones for any use, from data manipulation to visualization to modeling to reporting. Fortunately, so many brilliant players in the R ecosystem continue contributing as you read those lines, making data science practices more effortless and productive. I must admit that I was lucky to start my R journey when most of the libraries in R that comprise the [Tidyverse](https://www.tidyverse.org/) had been launched already. 
+
+Finally, R is a statistical programming language created by scientists for scientists. Therefore, many of its solutions also fit many use cases of applied research in a business context. However, in the business environment, most people are non-software experts. Fortunately, internal data clients can use R scripts and projects as is or with their other analytics and reporting tools in their organization. 
+
+The easy and quick adoption, the flexible and productive usage, and the suit to the business environment encouraged me to combine R with my professional practice and business activity.
+

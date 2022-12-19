@@ -1,0 +1,27 @@
+## Combining it all
+
+This open-book attempts to integrate my personal career experiences with People Analytics use cases and data science practices. To realize this integration, I followed two well-known conceptual models that served me on my journey: the first model is "Employee Lifetime Value," and the second is "Analytics Maturity."
+
+I came up with the idea to bind these two conceptual models during the workshops I offered in People Analytics. I wanted to enable HR professionals to impact the business by raising the right business questions and leveraging findings and insights derived from people's data. But HR professionals can support business decision-making only when they communicate those questions to data scientists. 
+
+I tried to encourage HR professionals to be proactive in conversations with the data scientist who supports their work. Such conversations mediate data science and the business needs in workforce-related analysis and yield impactful storytelling with data. Therefore, I created simulations for them to enable upskilling and reskilling in analytical mindset and critical thinking without becoming data professionals.
+
+Each simulation I created included a workforce use case at some point in the employee lifecycle. It also leveraged the use case to demonstrate a practice or methods in data science. Eventually, combining points on the employee lifecycle and data science practices offered a thorough understanding of real People Analytics projects. 
+
+The main section of this book (Part 3) includes those simulations. It contains eight chapters; each depicts a People Analytics use case and explores a relevant topic in data science. The structure of the eight chapters covers phases of the two conceptual models, "Employee Lifetime Value" and "Analytics Maturity, and essentially interwinds them. 
+
+From my experience, the best way to develop HR professionals' data literacy is by using HR data. Therefore, I used open data sources similar to organizational data sets in most learning programs. However, the available open data on HR topics limited my endeavor. Nevertheless, I gathered data resources covering many stages in the employee lifecycle and used them in all analytics maturity levels after anonymizing and randomizing them.  
+
+The concept of "Employee Lifetime Value" is reviewed in the **1st module** and serves as a basis for understanding the analytics processes and data preparation. To proceed with data exploration, visualizations, and hypotheses, I used a dataset of Employee Absenteeism in the **2nd module**. Next, testing hypotheses with ANOVA and linear regression is demonstrated in the **3rd module**, leveraging the use case of the Gender Pay Gap. 
+
+I dedicated the two subsequent modules to advanced analytics: In **module 4**, I used Performance Measures to demonstrate data reduction with factor analysis. In **module 5**, I predicted Employee Attrition with logistic regression.
+
+The following two modules describe semantic analytics: understanding meaning and social context. In **module 6**, I used Exit Surveys data to analyze text and Categorical data. In **module 7**, I explored team collaboration with Organization Network Analysis. 
+
+The **last module** is an exception. It does not bring a use case or analytics. Instead, I wrapped up with a review of the future of People Analytics, in which such use cases are automated. In the automation phase, new Ethics considerations become crucial. However, understanding the practical foundations of ethics is a learning topic that, in my opinion, should be seeded when starting the People Analytics journey. 
+
+As mentioned, I did not create the simulations to make HR professionals become data scientists but rather to train them to work with data scientists. Therefore, each chapter that includes a People Analytics use case follows similar steps that enable simulating conversation with a data scientist that supports HR work: use case description, data source, HR briefing, analytics methods review, analysis using R, storytelling with data, and conclusions. The best use of each chapter is to follow these steps to generalize them in a real-life situation where a data scientist is providing an analytics project.
+
+This book is not a textbook about R programming. Instead, it focuses on applying R programming in various use cases in People Analytics. Therefore, I did not cover the basics of R programming and focused only on reviewing R code relevant to those use cases. Frankly, I don't see any point in repeating the best R open books that serve me as frequent learning materials. However, when using various analytics, I referred to other R available books where the reader can expand on the topic.
+
+Nevertheless, if you are new to R, I organized all the references for getting started in the next section to ensure that you are ready - or R ready. However, suppose you are a people scientist or analyst; leverage the use cases to expand your tool kit to use R and, if you already do so, to have new ideas about additional use cases and research solutions.

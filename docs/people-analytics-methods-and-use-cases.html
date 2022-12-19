@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 People Analytics Methods and Use Cases | Littalics in wondeRland</title>
+  <meta name="description" content="Chapter 3 People Analytics Methods and Use Cases | Littalics in wondeRland" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 People Analytics Methods and Use Cases | Littalics in wondeRland" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 People Analytics Methods and Use Cases | Littalics in wondeRland" />
+  
+  
+  
+
+<meta name="author" content="Littal Shemer Haim" />
+
+
+<meta name="date" content="2022-12-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="r-you-ready-getting-started.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">wondeRland</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#why-littalics-in-wonderland"><i class="fa fa-check"></i><b>1.1</b> Why Littalics in wondeRland?</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#why-people-analytics"><i class="fa fa-check"></i><b>1.2</b> Why People Analytics</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#why-r-and-rstudio"><i class="fa fa-check"></i><b>1.3</b> Why R and Rstudio?</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#combining-it-all"><i class="fa fa-check"></i><b>1.4</b> Combining it all</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html"><i class="fa fa-check"></i><b>2</b> R you ready? Getting Started</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#instalation"><i class="fa fa-check"></i><b>2.1</b> Instalation</a></li>
+<li class="chapter" data-level="2.2" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#navigation"><i class="fa fa-check"></i><b>2.2</b> Navigation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#r-code"><i class="fa fa-check"></i><b>2.2.1</b> R code</a></li>
+<li class="chapter" data-level="2.2.2" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#r-packages"><i class="fa fa-check"></i><b>2.2.2</b> R Packages</a></li>
+<li class="chapter" data-level="2.2.3" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#your-ide"><i class="fa fa-check"></i><b>2.2.3</b> Your IDE</a></li>
+<li class="chapter" data-level="2.2.4" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#getting-help"><i class="fa fa-check"></i><b>2.2.4</b> Getting Help</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#analytics-process"><i class="fa fa-check"></i><b>2.3</b> Analytics Process</a></li>
+<li class="chapter" data-level="2.4" data-path="r-you-ready-getting-started.html"><a href="r-you-ready-getting-started.html#reproducibility"><i class="fa fa-check"></i><b>2.4</b> Reproducibility</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html"><i class="fa fa-check"></i><b>3</b> People Analytics Methods and Use Cases</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#employee-lifetime-value"><i class="fa fa-check"></i><b>3.1</b> Employee Lifetime Value</a></li>
+<li class="chapter" data-level="3.2" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#employee-absenteeism"><i class="fa fa-check"></i><b>3.2</b> Employee Absenteeism</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#the-use-case"><i class="fa fa-check"></i><b>3.2.1</b> The use case</a></li>
+<li class="chapter" data-level="3.2.2" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#data-source"><i class="fa fa-check"></i><b>3.2.2</b> Data source</a></li>
+<li class="chapter" data-level="3.2.3" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#hr-briefing"><i class="fa fa-check"></i><b>3.2.3</b> HR briefing</a></li>
+<li class="chapter" data-level="3.2.4" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#analytics-methods"><i class="fa fa-check"></i><b>3.2.4</b> Analytics methods</a></li>
+<li class="chapter" data-level="3.2.5" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#analysis-using-r"><i class="fa fa-check"></i><b>3.2.5</b> Analysis using R</a></li>
+<li class="chapter" data-level="3.2.6" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#storytelling-with-data"><i class="fa fa-check"></i><b>3.2.6</b> Storytelling with data</a></li>
+<li class="chapter" data-level="3.2.7" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#conclusions"><i class="fa fa-check"></i><b>3.2.7</b> Conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#gender-pay-gap"><i class="fa fa-check"></i><b>3.3</b> Gender Pay Gap</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#the-use-case-1"><i class="fa fa-check"></i><b>3.3.1</b> The use case</a></li>
+<li class="chapter" data-level="3.3.2" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#data-source-1"><i class="fa fa-check"></i><b>3.3.2</b> Data source</a></li>
+<li class="chapter" data-level="3.3.3" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#hr-briefing-1"><i class="fa fa-check"></i><b>3.3.3</b> HR briefing</a></li>
+<li class="chapter" data-level="3.3.4" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#analytics-methods-1"><i class="fa fa-check"></i><b>3.3.4</b> Analytics methods</a></li>
+<li class="chapter" data-level="3.3.5" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#analysis-using-r-1"><i class="fa fa-check"></i><b>3.3.5</b> Analysis using R</a></li>
+<li class="chapter" data-level="3.3.6" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#storytelling-with-data-1"><i class="fa fa-check"></i><b>3.3.6</b> Storytelling with data</a></li>
+<li class="chapter" data-level="3.3.7" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#conclusions-1"><i class="fa fa-check"></i><b>3.3.7</b> Conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#performance-measures"><i class="fa fa-check"></i><b>3.4</b> 4 Performance Measures</a></li>
+<li class="chapter" data-level="3.5" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#employee-attrition"><i class="fa fa-check"></i><b>3.5</b> Employee Attrition</a></li>
+<li class="chapter" data-level="3.6" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#exit-surveys"><i class="fa fa-check"></i><b>3.6</b> Exit Surveys</a></li>
+<li class="chapter" data-level="3.7" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#teams-and-collaboration"><i class="fa fa-check"></i><b>3.7</b> Teams and collaboration</a></li>
+<li class="chapter" data-level="3.8" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html#the-future-of-people-analytics"><i class="fa fa-check"></i><b>3.8</b> The future of People Analytics</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Littalics in wondeRland</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="people-analytics-methods-and-use-cases" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> People Analytics Methods and Use Cases<a href="people-analytics-methods-and-use-cases.html#people-analytics-methods-and-use-cases" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>text</p>
+
+<div id="employee-lifetime-value" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Employee Lifetime Value<a href="people-analytics-methods-and-use-cases.html#employee-lifetime-value" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(Data preparation)</p>
+
+</div>
+<div id="employee-absenteeism" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Employee Absenteeism<a href="people-analytics-methods-and-use-cases.html#employee-absenteeism" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this section, we’ll discuss Employee Absenteeism and leverage the topic to practice <strong>exploration</strong> and hypotheses set by <strong>visualization</strong>. I based this section on a previous article on my blog: <a href="https://www.littalics.com/visualizing-absenteeism-at-work/">Visualizing Absenteeism At Work</a>.</p>
+<div id="the-use-case" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> The use case<a href="people-analytics-methods-and-use-cases.html#the-use-case" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Employee Absenteeism is a failure to be or remain at work as scheduled or planned. Excessive absenteeism indicates issues and challenges for the organization and within individuals.</p>
+<p>Absenteeism causes employers productivity loss. There are two main components for this loss: First, absenteeism reduces the outputs of absent employees and the employees who serve as a replacement. Secondly, there are administrative tasks adjusting the workflow.</p>
+<p>There are implications for individuals too. First, the absent employee may lose pay and experience decreased performance and harm perception. Secondly, co-workers may experience increased workloads that may end in burnout. In addition, clients may suffer lousy service.</p>
+<p>The organization can evaluate its absenteeism rate in comparison to the sector or country benchmarks. But such a comparison will not point to the absenteeism causes and the proper intervention to reduce it. However, exploring the associations between absenteeism, employee characteristics, and work characteristics are helpful for actionable insights.</p>
+</div>
+<div id="data-source" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Data source<a href="people-analytics-methods-and-use-cases.html#data-source" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>I found the data of this use case in the <a href="https://archive.ics.uci.edu/ml/datasets/Absenteeism+at+work">UC Irvine Machine Learning Repository</a>. The database was created at a courier company in Brazil. It includes records of absenteeism from July 2007 to July 2010.</p>
+<p>Variables in this dataset encompass time and duration of absence, employee background (distance from residence to work, service time, age, education, social drinking, social smoking), and work characteristics (workload, hit targets, disciplinary failure).</p>
+<p>The structure of this data set is unique. It contains 740 rows and 20 columns. Each record represents an occurrence of absenteeism due to a single reason, measured in hours. Therefore, each employee may have multiple records marked with the same employee’s ID. These records should be summed up.</p>
+<p>The dataset was used in <a href="https://www.tib.eu/de/suchen/id/ieee:sid~6263151/Application-of-a-neuro-fuzzy-network-in-prediction">academic research</a> at the Universidade Nove de Julho – Postgraduate Program in Informatics and Knowledge Management. The data creators are Andrea Martiniano, Ricardo Pinto Ferreira, and Renato Jose Sassi.</p>
+<p>A special thanks to my colleagues who wrote the open book <a href="https://hranalyticslive.netlify.app/index.html">HR Analytics in R</a> and brought this data set. However, my approach is different. I aim my analysis towards actionable insights, as if my clients are HR leaders, rather than simply exploring the data for analysis, as my colleagues did. Therefore, all variables are considered predictors in creating the visualizations presented in this use case, while absenteeism is the outcome.</p>
+</div>
+<div id="hr-briefing" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> HR briefing<a href="people-analytics-methods-and-use-cases.html#hr-briefing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Suppose you are an HR leader at a courier company. You prepare to advise an intervention plan for the severe issue of driver absenteeism that costs the company its productivity loss.</p>
+<p>You have records of absent employees for a couple of years. You also have data about employee background in your HRIS. In addition, the business unit provides you with data about the work characteristics of drivers.</p>
+<p>You ask a data scientist who supports your work to consider those employee background variables and work characteristics variables as predictors of absenteeism. But first, you want to explore the associations by visualizing them.</p>
+</div>
+<div id="analytics-methods" class="section level3 hasAnchor" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Analytics methods<a href="people-analytics-methods-and-use-cases.html#analytics-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The focus of this section is visualization. I visualized the data to explore it, mainly to get a glance into the cause of absenteeism in employee characteristics and work attributes. Obviously, an actual project will include additional multivariate statistics and statistical models, but this is beyond the scope of this section.</p>
+<p>Visualization is a core skill and activity of a data scientist. To excel in visualizing data, understanding statistics and the proper design are necessary. I neglect the explanations of what makes a good visualization, though, letting the charts speak for themselves. However, in most visualizations, I added some remarks to practice critical thinking, which is not only the responsibility of the data scientist but also his sponsors and audience, aka you.</p>
+<p>In every analysis process, visualization serves two functions: exploring the data and stewarding it to the audience. In this use case, I tried to do both at once. Therefore, I did not settle for sloppy visualization, which is sufficient for the exploration phase, but I took the effort to make the visualization compelling for reporting.</p>
+<p>Some of the following visualizations I created may seem complicated at first glance. But when I used composed graphical representations of the data, the objective was to explore, with the fewest charts, the association between absenteeism and its two predictor kinds: employee characteristics and work characteristics. Nevertheless, I kept the story proper, ensuring it was appealing, using the right charts, and emphasizing the importance.</p>
+</div>
+<div id="analysis-using-r" class="section level3 hasAnchor" number="3.2.5">
+<h3><span class="header-section-number">3.2.5</span> Analysis using R<a href="people-analytics-methods-and-use-cases.html#analysis-using-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>1 - Absenteeism and Employee Background</strong></p>
+<p>Does absenteeism in the Brazilian courier company relate to its employees’ background? To be more precise, can we point to specific employee groups more prone to be absent? And maybe intervein among these groups?</p>
+<p>In this part of the analysis, I explored employee background variables, such as age, tenure, body attributes, social behaviors, and family coincidence. I tried to leverage whatever variables I could find in the data. However, People Analysts who work with actual data in their organizations may discover many more relevant variables. In addition, other variables in this dataset are not typical in organizations.</p>
+<p><strong>1.1 Employee Age and Tenure</strong></p>
+<p>How absenteeism, measured in hours, is associated with employee age or tenure? To explore the relationship between these three numerical variables, I suggested a plot that captures the distribution of each variable, scatters each pair of variables and presents the correlation.</p>
+<p>As clearly shown in Figure 1, absenteeism is not related to age or tenure in the courier company. Notice, however, that age and tenure are correlated in this organization. It may not be the case among other occupations and organizations. Furthermore, the density plots that give you an impression of the shape of the distribution of each variable may also be unique for this case study.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="people-analytics-methods-and-use-cases.html#cb1-1" aria-hidden="true" tabindex="-1"></a>dat.fig1 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb1-2"><a href="people-analytics-methods-and-use-cases.html#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ID, Absenteeism_time_in_hours, Age, Service_time) <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="people-analytics-methods-and-use-cases.html#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ID) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-4"><a href="people-analytics-methods-and-use-cases.html#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours),</span>
+<span id="cb1-5"><a href="people-analytics-methods-and-use-cases.html#cb1-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">Age =</span> <span class="fu">mean</span>(Age),</span>
+<span id="cb1-6"><a href="people-analytics-methods-and-use-cases.html#cb1-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Tenure =</span> <span class="fu">mean</span>(Service_time)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-7"><a href="people-analytics-methods-and-use-cases.html#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism, Age, Tenure)</span>
+<span id="cb1-8"><a href="people-analytics-methods-and-use-cases.html#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="people-analytics-methods-and-use-cases.html#cb1-9" aria-hidden="true" tabindex="-1"></a>my_scatter <span class="ot">&lt;-</span> <span class="cf">function</span>(data,mapping){</span>
+<span id="cb1-10"><a href="people-analytics-methods-and-use-cases.html#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">data=</span>data, <span class="at">mapping=</span>mapping) <span class="sc">+</span></span>
+<span id="cb1-11"><a href="people-analytics-methods-and-use-cases.html#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>)</span>
+<span id="cb1-12"><a href="people-analytics-methods-and-use-cases.html#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-13"><a href="people-analytics-methods-and-use-cases.html#cb1-13" aria-hidden="true" tabindex="-1"></a>my_density <span class="ot">&lt;-</span> <span class="cf">function</span>(data,mapping){</span>
+<span id="cb1-14"><a href="people-analytics-methods-and-use-cases.html#cb1-14" aria-hidden="true" tabindex="-1"></a>   <span class="fu">ggplot</span>(<span class="at">data=</span>data,<span class="at">mapping=</span>mapping) <span class="sc">+</span></span>
+<span id="cb1-15"><a href="people-analytics-methods-and-use-cases.html#cb1-15" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_density</span>(<span class="at">alpha=</span><span class="fl">0.65</span>,</span>
+<span id="cb1-16"><a href="people-analytics-methods-and-use-cases.html#cb1-16" aria-hidden="true" tabindex="-1"></a>               <span class="at">fill=</span><span class="st">&quot;#3b93a4&quot;</span>)</span>
+<span id="cb1-17"><a href="people-analytics-methods-and-use-cases.html#cb1-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-18"><a href="people-analytics-methods-and-use-cases.html#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="people-analytics-methods-and-use-cases.html#cb1-19" aria-hidden="true" tabindex="-1"></a>fig1 <span class="ot">&lt;-</span> <span class="fu">ggpairs</span>(dat.fig1,</span>
+<span id="cb1-20"><a href="people-analytics-methods-and-use-cases.html#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">lower=</span><span class="fu">list</span>(<span class="at">continuous=</span>my_scatter),</span>
+<span id="cb1-21"><a href="people-analytics-methods-and-use-cases.html#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">diag=</span><span class="fu">list</span>(<span class="at">continuous=</span>my_density))</span>
+<span id="cb1-22"><a href="people-analytics-methods-and-use-cases.html#cb1-22" aria-hidden="true" tabindex="-1"></a>fig1 <span class="ot">&lt;-</span> fig1 <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 1: Absenteeism, Age and Tenure&quot;</span>)</span>
+<span id="cb1-23"><a href="people-analytics-methods-and-use-cases.html#cb1-23" aria-hidden="true" tabindex="-1"></a>fig1</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/age-tenure-1.png" width="672" /></p>
+<p><strong>1.2 Employee Body Attributes</strong></p>
+<p>Does absenteeism associate with employee weight, height, or body mass index? Not at all, according to Figure 2. It may be nonsense to explore this in the context of an organization, and obviously, you don’t collect such data in most occupations. However, since the data set includes those variables, why not explore them? The following exploration is precisely the same as the previous one. Since I already had the code, I could quickly reproduce the visualization.</p>
+<p>Notice that some employees in this data set are obese. If we find a positive correlation between absenteeism and weight, it doesn’t necessarily mean obesity causes absenteeism. Correlation does not imply causation. The alternative direction of the relation is possible too: People who tend to be absent gain more weight, for some reason. Either way, it’s not the case here.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="people-analytics-methods-and-use-cases.html#cb2-1" aria-hidden="true" tabindex="-1"></a>dat.fig2 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="people-analytics-methods-and-use-cases.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ID, Absenteeism_time_in_hours, Weight, Height, Body_mass_index) <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="people-analytics-methods-and-use-cases.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ID) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a href="people-analytics-methods-and-use-cases.html#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours),</span>
+<span id="cb2-5"><a href="people-analytics-methods-and-use-cases.html#cb2-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">Weight =</span> <span class="fu">mean</span>(Weight),</span>
+<span id="cb2-6"><a href="people-analytics-methods-and-use-cases.html#cb2-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Height =</span> <span class="fu">mean</span>(Height),</span>
+<span id="cb2-7"><a href="people-analytics-methods-and-use-cases.html#cb2-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">BMI =</span> <span class="fu">mean</span>(Body_mass_index)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-8"><a href="people-analytics-methods-and-use-cases.html#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism, Weight, Height, BMI)</span>
+<span id="cb2-9"><a href="people-analytics-methods-and-use-cases.html#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="people-analytics-methods-and-use-cases.html#cb2-10" aria-hidden="true" tabindex="-1"></a>fig2 <span class="ot">&lt;-</span> <span class="fu">ggpairs</span>(dat.fig2,</span>
+<span id="cb2-11"><a href="people-analytics-methods-and-use-cases.html#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">lower=</span><span class="fu">list</span>(<span class="at">continuous=</span>my_scatter),</span>
+<span id="cb2-12"><a href="people-analytics-methods-and-use-cases.html#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">diag=</span><span class="fu">list</span>(<span class="at">continuous=</span>my_density))</span>
+<span id="cb2-13"><a href="people-analytics-methods-and-use-cases.html#cb2-13" aria-hidden="true" tabindex="-1"></a>fig2 <span class="ot">&lt;-</span> fig2 <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 2: Absenteeism and employee body attributes&quot;</span>)</span>
+<span id="cb2-14"><a href="people-analytics-methods-and-use-cases.html#cb2-14" aria-hidden="true" tabindex="-1"></a>fig2</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/body-attributes-1.png" width="672" /></p>
+<p><strong>1.3 Employee Social Behaviors</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="people-analytics-methods-and-use-cases.html#cb3-1" aria-hidden="true" tabindex="-1"></a>dat.fig3 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="people-analytics-methods-and-use-cases.html#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ID, Absenteeism_time_in_hours, Social_smoker, Social_drinker) <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="people-analytics-methods-and-use-cases.html#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ID) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-4"><a href="people-analytics-methods-and-use-cases.html#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours),</span>
+<span id="cb3-5"><a href="people-analytics-methods-and-use-cases.html#cb3-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">Smoking =</span> <span class="fu">mean</span>(Social_smoker),</span>
+<span id="cb3-6"><a href="people-analytics-methods-and-use-cases.html#cb3-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Drinking =</span> <span class="fu">mean</span>(Social_drinker)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-7"><a href="people-analytics-methods-and-use-cases.html#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism, Smoking, Drinking) <span class="sc">%&gt;%</span></span>
+<span id="cb3-8"><a href="people-analytics-methods-and-use-cases.html#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Smoking =</span> <span class="fu">as.factor</span>(<span class="fu">recode</span>(Smoking, <span class="st">`</span><span class="at">0</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;No&quot;</span>, <span class="st">`</span><span class="at">1</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;Yes&quot;</span>)))  <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="people-analytics-methods-and-use-cases.html#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Drinking =</span> <span class="fu">as.factor</span>(<span class="fu">recode</span>(Drinking, <span class="st">`</span><span class="at">0</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;No&quot;</span>, <span class="st">`</span><span class="at">1</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;Yes&quot;</span>))) </span>
+<span id="cb3-10"><a href="people-analytics-methods-and-use-cases.html#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="people-analytics-methods-and-use-cases.html#cb3-11" aria-hidden="true" tabindex="-1"></a>fig3<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig3, <span class="fu">aes</span>(<span class="at">x=</span>Smoking, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb3-12"><a href="people-analytics-methods-and-use-cases.html#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">fill=</span>Smoking)) <span class="sc">+</span></span>
+<span id="cb3-13"><a href="people-analytics-methods-and-use-cases.html#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 3: Absenteeism and Smoking&quot;</span>, <span class="at">x=</span><span class="st">&quot;Smoking&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-14"><a href="people-analytics-methods-and-use-cases.html#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-15"><a href="people-analytics-methods-and-use-cases.html#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#FFFFFF&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>)) </span>
+<span id="cb3-16"><a href="people-analytics-methods-and-use-cases.html#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="people-analytics-methods-and-use-cases.html#cb3-17" aria-hidden="true" tabindex="-1"></a>fig3<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig3, <span class="fu">aes</span>(<span class="at">x=</span>Drinking, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb3-18"><a href="people-analytics-methods-and-use-cases.html#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">fill=</span>Drinking)) <span class="sc">+</span></span>
+<span id="cb3-19"><a href="people-analytics-methods-and-use-cases.html#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 4: Absenteeism and Drinking&quot;</span>, <span class="at">x=</span><span class="st">&quot;Drinking&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb3-20"><a href="people-analytics-methods-and-use-cases.html#cb3-20" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-21"><a href="people-analytics-methods-and-use-cases.html#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#FFFFFF&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>))</span>
+<span id="cb3-22"><a href="people-analytics-methods-and-use-cases.html#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="people-analytics-methods-and-use-cases.html#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(fig3<span class="fl">.1</span>, fig3<span class="fl">.2</span>, <span class="at">nrow=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/social-behavior-1.png" width="672" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="people-analytics-methods-and-use-cases.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#testing for independency</span></span>
+<span id="cb4-2"><a href="people-analytics-methods-and-use-cases.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#table(dat.fig3$Smoking, dat.fig3$Drinking)</span></span>
+<span id="cb4-3"><a href="people-analytics-methods-and-use-cases.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#chisq.test(table(dat.fig3$Smoking, dat.fig3$Drinking))</span></span></code></pre></div>
+<p><strong>1.4 Employee Family Members</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="people-analytics-methods-and-use-cases.html#cb5-1" aria-hidden="true" tabindex="-1"></a>dat.fig4a <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="people-analytics-methods-and-use-cases.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ID, Absenteeism_time_in_hours, Son, Pet) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="people-analytics-methods-and-use-cases.html#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ID) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="people-analytics-methods-and-use-cases.html#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours),</span>
+<span id="cb5-5"><a href="people-analytics-methods-and-use-cases.html#cb5-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">Children =</span> <span class="fu">mean</span>(Son),</span>
+<span id="cb5-6"><a href="people-analytics-methods-and-use-cases.html#cb5-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Pets =</span> <span class="fu">mean</span>(Pet)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a href="people-analytics-methods-and-use-cases.html#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Children =</span> <span class="fu">recode_factor</span>(Children, <span class="st">`</span><span class="at">0</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;No kids&quot;</span>, <span class="st">`</span><span class="at">1</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;Have kids&quot;</span>, <span class="st">`</span><span class="at">2</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have kids&quot;</span>,</span>
+<span id="cb5-8"><a href="people-analytics-methods-and-use-cases.html#cb5-8" aria-hidden="true" tabindex="-1"></a>                                  <span class="st">`</span><span class="at">3</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have kids&quot;</span>, <span class="st">`</span><span class="at">4</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have kids&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a href="people-analytics-methods-and-use-cases.html#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Pets =</span> <span class="fu">recode_factor</span>(Pets, <span class="st">`</span><span class="at">0</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;No pets&quot;</span>, <span class="st">`</span><span class="at">1</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;Have pets&quot;</span>, <span class="st">`</span><span class="at">2</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have pets&quot;</span>,</span>
+<span id="cb5-10"><a href="people-analytics-methods-and-use-cases.html#cb5-10" aria-hidden="true" tabindex="-1"></a>                              <span class="st">`</span><span class="at">3</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have pets&quot;</span>, <span class="st">`</span><span class="at">4</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have pets&quot;</span>,</span>
+<span id="cb5-11"><a href="people-analytics-methods-and-use-cases.html#cb5-11" aria-hidden="true" tabindex="-1"></a>                              <span class="st">`</span><span class="at">5</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have pets&quot;</span>, <span class="st">`</span><span class="at">6</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have pets&quot;</span>,</span>
+<span id="cb5-12"><a href="people-analytics-methods-and-use-cases.html#cb5-12" aria-hidden="true" tabindex="-1"></a>                              <span class="st">`</span><span class="at">7</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have pets&quot;</span>, <span class="st">`</span><span class="at">8</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;Have pets&quot;</span>,)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-13"><a href="people-analytics-methods-and-use-cases.html#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism, Children, Pets)</span>
+<span id="cb5-14"><a href="people-analytics-methods-and-use-cases.html#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="people-analytics-methods-and-use-cases.html#cb5-15" aria-hidden="true" tabindex="-1"></a>fig4a<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig4a, <span class="fu">aes</span>(<span class="at">x=</span>Children, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb5-16"><a href="people-analytics-methods-and-use-cases.html#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">fill=</span>Children)) <span class="sc">+</span></span>
+<span id="cb5-17"><a href="people-analytics-methods-and-use-cases.html#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 5: Absenteeism and Children&quot;</span>, <span class="at">x=</span><span class="st">&quot;Children&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb5-18"><a href="people-analytics-methods-and-use-cases.html#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb5-19"><a href="people-analytics-methods-and-use-cases.html#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#FFFFFF&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>)) </span>
+<span id="cb5-20"><a href="people-analytics-methods-and-use-cases.html#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="people-analytics-methods-and-use-cases.html#cb5-21" aria-hidden="true" tabindex="-1"></a>fig4a<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig4a, <span class="fu">aes</span>(<span class="at">x=</span>Pets, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb5-22"><a href="people-analytics-methods-and-use-cases.html#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">fill=</span>Pets)) <span class="sc">+</span></span>
+<span id="cb5-23"><a href="people-analytics-methods-and-use-cases.html#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 6: Absenteeism and Pets&quot;</span>, <span class="at">x=</span><span class="st">&quot;Pets&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb5-24"><a href="people-analytics-methods-and-use-cases.html#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb5-25"><a href="people-analytics-methods-and-use-cases.html#cb5-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#FFFFFF&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>))</span>
+<span id="cb5-26"><a href="people-analytics-methods-and-use-cases.html#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="people-analytics-methods-and-use-cases.html#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(fig4a<span class="fl">.1</span>, fig4a<span class="fl">.2</span>, <span class="at">nrow=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/family-member-1.png" width="672" /></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="people-analytics-methods-and-use-cases.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#testing for independency</span></span>
+<span id="cb6-2"><a href="people-analytics-methods-and-use-cases.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#table(dat.fig4a$Children, dat.fig4a$Pets)</span></span>
+<span id="cb6-3"><a href="people-analytics-methods-and-use-cases.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#chisq.test(table(dat.fig4a$Children, dat.fig4a$Pets))</span></span></code></pre></div>
+<p><strong>2 - Absenteeism and Work Characteristics</strong></p>
+<p><strong>2.1 Absenteeism, Workload and Commute Distance</strong></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="people-analytics-methods-and-use-cases.html#cb7-1" aria-hidden="true" tabindex="-1"></a>dat.fig5 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="people-analytics-methods-and-use-cases.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ID, Absenteeism_time_in_hours, Work_load_Average_per_day, Distance_from_Residence_to_Work, Education) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="people-analytics-methods-and-use-cases.html#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ID) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-4"><a href="people-analytics-methods-and-use-cases.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours),</span>
+<span id="cb7-5"><a href="people-analytics-methods-and-use-cases.html#cb7-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">Workload =</span> <span class="fu">mean</span>(Work_load_Average_per_day ),</span>
+<span id="cb7-6"><a href="people-analytics-methods-and-use-cases.html#cb7-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Distance =</span> <span class="fu">mean</span>(Distance_from_Residence_to_Work),</span>
+<span id="cb7-7"><a href="people-analytics-methods-and-use-cases.html#cb7-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">Education =</span> <span class="fu">mean</span>(Education)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-8"><a href="people-analytics-methods-and-use-cases.html#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Education =</span> <span class="fu">recode_factor</span>(Education, <span class="st">`</span><span class="at">1</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;Low&quot;</span>, <span class="st">`</span><span class="at">2</span><span class="st">`</span><span class="ot">=</span><span class="st">&quot;Mid&quot;</span>, <span class="st">`</span><span class="at">3</span><span class="st">`</span> <span class="ot">=</span> <span class="st">&quot;High&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-9"><a href="people-analytics-methods-and-use-cases.html#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism, Workload, Distance, Education)</span>
+<span id="cb7-10"><a href="people-analytics-methods-and-use-cases.html#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="people-analytics-methods-and-use-cases.html#cb7-11" aria-hidden="true" tabindex="-1"></a>fig5<span class="fl">.1</span>a <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig5, <span class="fu">aes</span>(<span class="at">x=</span>Workload, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb7-12"><a href="people-analytics-methods-and-use-cases.html#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">size=</span><span class="dv">3</span>, <span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color=</span><span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
+<span id="cb7-13"><a href="people-analytics-methods-and-use-cases.html#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 7: Absenteeism &amp; Workload&quot;</span>, <span class="at">x=</span><span class="st">&quot;Workload&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>)</span>
+<span id="cb7-14"><a href="people-analytics-methods-and-use-cases.html#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="people-analytics-methods-and-use-cases.html#cb7-15" aria-hidden="true" tabindex="-1"></a>fig5<span class="fl">.2</span>a <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig5, <span class="fu">aes</span>(<span class="at">x=</span>Distance, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb7-16"><a href="people-analytics-methods-and-use-cases.html#cb7-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">size=</span><span class="dv">3</span>, <span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color=</span><span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
+<span id="cb7-17"><a href="people-analytics-methods-and-use-cases.html#cb7-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 8: Absenteeism &amp; Commute&quot;</span>, <span class="at">x=</span><span class="st">&quot;Commute Distance&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>)</span>
+<span id="cb7-18"><a href="people-analytics-methods-and-use-cases.html#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="people-analytics-methods-and-use-cases.html#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(fig5<span class="fl">.1</span>a, fig5<span class="fl">.2</span>a, <span class="at">nrow=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/workload-distance-1.png" width="672" /></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="people-analytics-methods-and-use-cases.html#cb8-1" aria-hidden="true" tabindex="-1"></a>fig5<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig5, <span class="fu">aes</span>(<span class="at">x=</span>Workload, <span class="at">y=</span>Absenteeism, <span class="at">fill=</span>Education, <span class="at">color=</span>Education)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="people-analytics-methods-and-use-cases.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">size=</span><span class="dv">3</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="fu">aes</span>(<span class="at">colour=</span>Education)) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="people-analytics-methods-and-use-cases.html#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#92A9BD&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>, <span class="st">&quot;#072227&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="people-analytics-methods-and-use-cases.html#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#92A9BD&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>, <span class="st">&quot;#072227&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb8-5"><a href="people-analytics-methods-and-use-cases.html#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 9: Absenteeism &amp; Workload&quot;</span>, <span class="at">subtitle=</span><span class="st">&quot;by Education Level&quot;</span>,</span>
+<span id="cb8-6"><a href="people-analytics-methods-and-use-cases.html#cb8-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">&quot;Workload&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span> ) <span class="sc">+</span></span>
+<span id="cb8-7"><a href="people-analytics-methods-and-use-cases.html#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">&quot;top&quot;</span>)</span>
+<span id="cb8-8"><a href="people-analytics-methods-and-use-cases.html#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="people-analytics-methods-and-use-cases.html#cb8-9" aria-hidden="true" tabindex="-1"></a>fig5<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig5, <span class="fu">aes</span>(<span class="at">x=</span>Distance, <span class="at">y=</span>Absenteeism, <span class="at">fill=</span>Education, <span class="at">color=</span>Education)) <span class="sc">+</span></span>
+<span id="cb8-10"><a href="people-analytics-methods-and-use-cases.html#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">size=</span><span class="dv">3</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="fu">aes</span>(<span class="at">colour=</span>Education)) <span class="sc">+</span></span>
+<span id="cb8-11"><a href="people-analytics-methods-and-use-cases.html#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#92A9BD&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>, <span class="st">&quot;#072227&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb8-12"><a href="people-analytics-methods-and-use-cases.html#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#92A9BD&quot;</span>, <span class="st">&quot;#3b93a4&quot;</span>, <span class="st">&quot;#072227&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb8-13"><a href="people-analytics-methods-and-use-cases.html#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 10: Absenteeism &amp; Commute&quot;</span>, <span class="at">subtitle=</span><span class="st">&quot;by Education Level&quot;</span>,</span>
+<span id="cb8-14"><a href="people-analytics-methods-and-use-cases.html#cb8-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">&quot;Commute Distance&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span> ) <span class="sc">+</span></span>
+<span id="cb8-15"><a href="people-analytics-methods-and-use-cases.html#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">&quot;top&quot;</span>)</span>
+<span id="cb8-16"><a href="people-analytics-methods-and-use-cases.html#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="people-analytics-methods-and-use-cases.html#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(fig5<span class="fl">.1</span>, fig5<span class="fl">.2</span>, <span class="at">nrow=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/workload-distance-education-1.png" width="672" /></p>
+<p><strong>2.2 Absenteeism, Hitting targets and Disciplinary failures</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="people-analytics-methods-and-use-cases.html#cb9-1" aria-hidden="true" tabindex="-1"></a>dat.fig6 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="people-analytics-methods-and-use-cases.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ID, Absenteeism_time_in_hours, Hit_target, Disciplinary_failure) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="people-analytics-methods-and-use-cases.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ID) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-4"><a href="people-analytics-methods-and-use-cases.html#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours),</span>
+<span id="cb9-5"><a href="people-analytics-methods-and-use-cases.html#cb9-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">Success =</span> <span class="fu">mean</span>(Hit_target),</span>
+<span id="cb9-6"><a href="people-analytics-methods-and-use-cases.html#cb9-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Indicipline =</span> <span class="fu">mean</span>(Disciplinary_failure)) <span class="sc">%&gt;%</span></span>
+<span id="cb9-7"><a href="people-analytics-methods-and-use-cases.html#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">AbsenteeismDir =</span> <span class="fu">ifelse</span>(Indicipline<span class="sc">&gt;</span><span class="fl">0.15</span>, <span class="sc">-</span><span class="dv">1</span><span class="sc">*</span>Absenteeism, Absenteeism))  <span class="sc">%&gt;%</span></span>
+<span id="cb9-8"><a href="people-analytics-methods-and-use-cases.html#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(AbsenteeismDir, Success, Indicipline)</span>
+<span id="cb9-9"><a href="people-analytics-methods-and-use-cases.html#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="people-analytics-methods-and-use-cases.html#cb9-10" aria-hidden="true" tabindex="-1"></a>fig6<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig6, <span class="fu">aes</span>(<span class="at">x=</span>Success, <span class="at">y=</span>AbsenteeismDir)) <span class="sc">+</span></span>
+<span id="cb9-11"><a href="people-analytics-methods-and-use-cases.html#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>( <span class="fu">aes</span>(<span class="at">x=</span>Success, <span class="at">xend=</span>Success, <span class="at">y=</span><span class="dv">0</span>, <span class="at">yend=</span>AbsenteeismDir), <span class="at">color=</span><span class="st">&quot;grey&quot;</span>) <span class="sc">+</span></span>
+<span id="cb9-12"><a href="people-analytics-methods-and-use-cases.html#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>( <span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb9-13"><a href="people-analytics-methods-and-use-cases.html#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
+<span id="cb9-14"><a href="people-analytics-methods-and-use-cases.html#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb9-15"><a href="people-analytics-methods-and-use-cases.html#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb9-16"><a href="people-analytics-methods-and-use-cases.html#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.border =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb9-17"><a href="people-analytics-methods-and-use-cases.html#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.ticks.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb9-18"><a href="people-analytics-methods-and-use-cases.html#cb9-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-19"><a href="people-analytics-methods-and-use-cases.html#cb9-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 11: Absenteeism and Target Hits&quot;</span>, <span class="at">x=</span><span class="st">&quot;Hit Target&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb9-20"><a href="people-analytics-methods-and-use-cases.html#cb9-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">90.5</span>, <span class="at">y =</span> <span class="dv">400</span>, <span class="at">label =</span> <span class="st">&quot;Disciplined Employees&quot;</span>, <span class="at">colour=</span><span class="st">&quot;#3b93a4&quot;</span>, <span class="at">size=</span><span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb9-21"><a href="people-analytics-methods-and-use-cases.html#cb9-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">90.5</span>, <span class="at">y =</span> <span class="sc">-</span><span class="dv">200</span>, <span class="at">label =</span> <span class="st">&quot;Undisciplined Employees&quot;</span>, <span class="at">colour=</span><span class="st">&quot;#3b93a4&quot;</span>, <span class="at">size=</span><span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb9-22"><a href="people-analytics-methods-and-use-cases.html#cb9-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">&quot;rect&quot;</span>, <span class="at">xmin =</span> <span class="dv">88</span>, <span class="at">xmax =</span> <span class="dv">98</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="dv">400</span>, <span class="at">ymax =</span> <span class="dv">0</span>, <span class="at">alpha =</span> .<span class="dv">1</span>) </span>
+<span id="cb9-23"><a href="people-analytics-methods-and-use-cases.html#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-24"><a href="people-analytics-methods-and-use-cases.html#cb9-24" aria-hidden="true" tabindex="-1"></a>fig6<span class="fl">.1</span></span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/hitting-target-disciplinary-failure-1.png" width="672" /></p>
+<p><strong>2.3 When Absenteeism Occures? Months and Seasons</strong></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="people-analytics-methods-and-use-cases.html#cb10-1" aria-hidden="true" tabindex="-1"></a>dat.fig7 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb10-2"><a href="people-analytics-methods-and-use-cases.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism_time_in_hours, Month_of_absence) <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="people-analytics-methods-and-use-cases.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Month_of_absence) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-4"><a href="people-analytics-methods-and-use-cases.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours))</span>
+<span id="cb10-5"><a href="people-analytics-methods-and-use-cases.html#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="people-analytics-methods-and-use-cases.html#cb10-6" aria-hidden="true" tabindex="-1"></a>fig7 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig7, <span class="fu">aes</span>(<span class="at">x=</span>Month_of_absence, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb10-7"><a href="people-analytics-methods-and-use-cases.html#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>, <span class="at">size=</span><span class="dv">3</span>)<span class="sc">+</span></span>
+<span id="cb10-8"><a href="people-analytics-methods-and-use-cases.html#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">name =</span><span class="st">&quot;Months&quot;</span>, </span>
+<span id="cb10-9"><a href="people-analytics-methods-and-use-cases.html#cb10-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">limits=</span><span class="fu">c</span>(<span class="st">&quot;JAN&quot;</span>,<span class="st">&quot;FEB&quot;</span>,<span class="st">&quot;MAR&quot;</span>,<span class="st">&quot;APR&quot;</span>,<span class="st">&quot;MAY&quot;</span>,<span class="st">&quot;JUN&quot;</span>,<span class="st">&quot;JUL&quot;</span>,<span class="st">&quot;AUG&quot;</span>,<span class="st">&quot;SEP&quot;</span>,<span class="st">&quot;OCT&quot;</span>,<span class="st">&quot;NOV&quot;</span>,<span class="st">&quot;DEC&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb10-10"><a href="people-analytics-methods-and-use-cases.html#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust=</span><span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="people-analytics-methods-and-use-cases.html#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 12: Monthly Absenteeism&quot;</span>, <span class="at">x=</span><span class="st">&quot;Month&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>)</span>
+<span id="cb10-12"><a href="people-analytics-methods-and-use-cases.html#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="people-analytics-methods-and-use-cases.html#cb10-13" aria-hidden="true" tabindex="-1"></a>dat.fig8 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb10-14"><a href="people-analytics-methods-and-use-cases.html#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism_time_in_hours, Day_of_the_week) <span class="sc">%&gt;%</span></span>
+<span id="cb10-15"><a href="people-analytics-methods-and-use-cases.html#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Day_of_the_week) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-16"><a href="people-analytics-methods-and-use-cases.html#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours))</span>
+<span id="cb10-17"><a href="people-analytics-methods-and-use-cases.html#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-18"><a href="people-analytics-methods-and-use-cases.html#cb10-18" aria-hidden="true" tabindex="-1"></a>fig8 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig8, <span class="fu">aes</span>(<span class="at">x=</span>Day_of_the_week, <span class="at">y=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb10-19"><a href="people-analytics-methods-and-use-cases.html#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&quot;#3b93a4&quot;</span>, <span class="at">size=</span><span class="dv">3</span>)<span class="sc">+</span></span>
+<span id="cb10-20"><a href="people-analytics-methods-and-use-cases.html#cb10-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">name =</span><span class="st">&quot;DAYS&quot;</span>, </span>
+<span id="cb10-21"><a href="people-analytics-methods-and-use-cases.html#cb10-21" aria-hidden="true" tabindex="-1"></a>                   <span class="at">limits=</span><span class="fu">c</span>(<span class="st">&quot;Sun&quot;</span> ,<span class="st">&quot;Mon&quot;</span>,<span class="st">&quot;Tue&quot;</span>,<span class="st">&quot;Wed&quot;</span>,<span class="st">&quot;Thu&quot;</span>,<span class="st">&quot;Fri&quot;</span>, <span class="st">&quot;Sat&quot;</span>)) <span class="sc">+</span> <span class="fu">ylim</span>(<span class="dv">200</span>,<span class="dv">1800</span>) <span class="sc">+</span></span>
+<span id="cb10-22"><a href="people-analytics-methods-and-use-cases.html#cb10-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 13: Daily Absenteeism&quot;</span>, <span class="at">x=</span><span class="st">&quot;Days&quot;</span>, <span class="at">y=</span><span class="st">&quot;Absenteeism (hours)&quot;</span>)</span>
+<span id="cb10-23"><a href="people-analytics-methods-and-use-cases.html#cb10-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-24"><a href="people-analytics-methods-and-use-cases.html#cb10-24" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(fig7, fig8, <span class="at">nrow=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/occurence-1.png" width="672" /></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="people-analytics-methods-and-use-cases.html#cb11-1" aria-hidden="true" tabindex="-1"></a>dat.fig9 <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="people-analytics-methods-and-use-cases.html#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Absenteeism_time_in_hours, Day_of_the_week, Month_of_absence) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="people-analytics-methods-and-use-cases.html#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Day_of_the_week, Month_of_absence) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-4"><a href="people-analytics-methods-and-use-cases.html#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Absenteeism =</span> <span class="fu">sum</span>(Absenteeism_time_in_hours))</span>
+<span id="cb11-5"><a href="people-analytics-methods-and-use-cases.html#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="people-analytics-methods-and-use-cases.html#cb11-6" aria-hidden="true" tabindex="-1"></a>fig9 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dat.fig9, <span class="fu">aes</span>(<span class="at">x=</span>Day_of_the_week, <span class="at">y=</span>Month_of_absence, <span class="at">fill=</span>Absenteeism)) <span class="sc">+</span></span>
+<span id="cb11-7"><a href="people-analytics-methods-and-use-cases.html#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span> </span>
+<span id="cb11-8"><a href="people-analytics-methods-and-use-cases.html#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">&quot;#EDEDED&quot;</span>, <span class="at">high =</span> <span class="st">&quot;#3b93a4&quot;</span>) <span class="sc">+</span></span>
+<span id="cb11-9"><a href="people-analytics-methods-and-use-cases.html#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">#theme_bw() +</span></span>
+<span id="cb11-10"><a href="people-analytics-methods-and-use-cases.html#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
+<span id="cb11-11"><a href="people-analytics-methods-and-use-cases.html#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb11-12"><a href="people-analytics-methods-and-use-cases.html#cb11-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb11-13"><a href="people-analytics-methods-and-use-cases.html#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.border =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb11-14"><a href="people-analytics-methods-and-use-cases.html#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.ticks.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb11-15"><a href="people-analytics-methods-and-use-cases.html#cb11-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-16"><a href="people-analytics-methods-and-use-cases.html#cb11-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_discrete</span>(<span class="at">name =</span><span class="st">&quot;Months&quot;</span>, </span>
+<span id="cb11-17"><a href="people-analytics-methods-and-use-cases.html#cb11-17" aria-hidden="true" tabindex="-1"></a>                   <span class="at">limits=</span><span class="fu">c</span>(<span class="st">&quot;JAN&quot;</span>,<span class="st">&quot;FEB&quot;</span>,<span class="st">&quot;MAR&quot;</span>,<span class="st">&quot;APR&quot;</span>,<span class="st">&quot;MAY&quot;</span>,<span class="st">&quot;JUN&quot;</span>,<span class="st">&quot;JUL&quot;</span>,<span class="st">&quot;AUG&quot;</span>,<span class="st">&quot;SEP&quot;</span>,<span class="st">&quot;OCT&quot;</span>,<span class="st">&quot;NOV&quot;</span>,<span class="st">&quot;DEC&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb11-18"><a href="people-analytics-methods-and-use-cases.html#cb11-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">name =</span><span class="st">&quot;Days&quot;</span>, </span>
+<span id="cb11-19"><a href="people-analytics-methods-and-use-cases.html#cb11-19" aria-hidden="true" tabindex="-1"></a>                   <span class="at">limits=</span><span class="fu">c</span>(<span class="st">&quot;Sun&quot;</span> ,<span class="st">&quot;Mon&quot;</span>,<span class="st">&quot;Tue&quot;</span>,<span class="st">&quot;Wed&quot;</span>,<span class="st">&quot;Thu&quot;</span>,<span class="st">&quot;Fri&quot;</span>, <span class="st">&quot;Sat&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb11-20"><a href="people-analytics-methods-and-use-cases.html#cb11-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Figure 14: Absenteeism by Days and Monthes - Heat Map&quot;</span>) <span class="sc">+</span></span>
+<span id="cb11-21"><a href="people-analytics-methods-and-use-cases.html#cb11-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> Absenteeism), <span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">size =</span> <span class="dv">4</span>) </span>
+<span id="cb11-22"><a href="people-analytics-methods-and-use-cases.html#cb11-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-23"><a href="people-analytics-methods-and-use-cases.html#cb11-23" aria-hidden="true" tabindex="-1"></a>fig9</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/occurence-2.png" width="672" /></p>
+</div>
+<div id="storytelling-with-data" class="section level3 hasAnchor" number="3.2.6">
+<h3><span class="header-section-number">3.2.6</span> Storytelling with data<a href="people-analytics-methods-and-use-cases.html#storytelling-with-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="conclusions" class="section level3 hasAnchor" number="3.2.7">
+<h3><span class="header-section-number">3.2.7</span> Conclusions<a href="people-analytics-methods-and-use-cases.html#conclusions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+
+</div>
+</div>
+<div id="gender-pay-gap" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Gender Pay Gap<a href="people-analytics-methods-and-use-cases.html#gender-pay-gap" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this section, we’ll discuss Gender Pay Gap and leverage the topic to practice <strong>hypotheses</strong> setting and testing by <strong>ANOVA</strong> and <strong>Linear Regression</strong>. I based this section on three articles published on my blog: (1) <a href="https://www.littalics.com/gender-pay-gap-and-people-analytics-a-practice-with-open-data/">Gender Pay Gap: Practice People Analytics With Open Data</a>, (2) <a href="https://www.littalics.com/finding-hidden-patterns-in-gender-pay-gap-data/">Finding Hidden Patterns In Gender Pay Gap Data</a>, and (3) <a href="https://www.littalics.com/gender-pay-gap-more-hidden-patterns/">Gender Pay Gap: More Hidden Patterns</a>.</p>
+<div id="the-use-case-1" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> The use case<a href="people-analytics-methods-and-use-cases.html#the-use-case-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The gender pay gap exists despite regulation, policies, hype, and preoccupation with the subject. Women still earn less than men in many countries, sectors, and roles. Moreover, the gap has been persistent over the years.</p>
+<p>There is no single cause for the gender pay gap. The reasons include: Gender-biased industries and roles in which female-dominated jobs often have lower wages and in which women are under-represented in high-income jobs; Bias and discrimination in recruitment, promotion, and compensation decisions; Disproportionate share of unpaid domestic work and care that women tend to handle more; Women’s careers are impacted by more time spent out of work as parents, and suffer more from the lack work flexibility in senior roles.</p>
+<p>To address the gender pay gap, employers may intervene in different ways. First, they need to analyze their pay data and processes. Then, after understanding the source of bias, they can take action and review the impact over time.</p>
+<p>Closing the gender pay gap is essential for everybody, not only women. Employers who take action to close the pay gap may benefit from higher retention, improved employee engagement, higher levels of productivity, and lower legal risks. In addition, the entire society may benefit as women increase their bargaining power and independence and decrease the chance of poverty later in life.</p>
+</div>
+<div id="data-source-1" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Data source<a href="people-analytics-methods-and-use-cases.html#data-source-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>My source and inspiration for this case study was a dataset of employee salaries in a municipal authority organization, <a href="https://data.montgomerycountymd.gov/browse?category=Human+Resources">Montgomery County, Maryland</a>, in 2017. For public transparency, this organization shares its dataset. The employee salaries in 2017 contained almost 10 thousand records and included annual salary information and some demographics and background variables (gender, tenure, role, department, full and part-time position). However, for our educational purpose, I anonymized and randomized it, so, from the following findings, it would be impossible to point to individuals or even recognize the organization. But I guarantee that the dataset I used is realistic.</p>
+<p>Before we proceed to the HR briefing, there are some notes worth mentioning about this dataset. First, it includes only binary gender categories, restricting the analysis to comparing only men vs. women. However, some organizations use more gender categories nowadays.</p>
+<p>Secondly, in many organizations, the data about employees’ occupation, seniority, gender, mode of employment, and salary details are likely to be stored in more than one platform, for example, the HR platform and payroll software. Moreover, there may be more than one payroll system in global organizations, and it is necessary to merge the data and manipulate it for a unified currency. If your platforms are not integrated, you must incorporate data from different sources for your project and make sure that your process is reproducible.</p>
+<p>Lastly, If you’d look at the CSV file for this demo, you’d immediately see - It is tidy data! It assigns each row to an employee and each column to a variable. Each cell represents only one value specific to one employee and one variable. Of course, the data you pull out for analysis may not be so neat in real-life situations. There will be duplicate records, missing entries, typos, and more. Your data scientist will need to clean and prepare the data for the project. This work may be tedious, but the systematic errors you may find will help you establish better maintenance practices and improve the data over time. It would be helpful beyond best practice because more and more countries regulate the gender pay gap.</p>
+</div>
+<div id="hr-briefing-1" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> HR briefing<a href="people-analytics-methods-and-use-cases.html#hr-briefing-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Suppose you are an HR leader in a municipal authority organization. Like many public organizations, your employer is subjected to strict regulations regarding equal pay. However, only going beyond the basic comparison between men and women will enable you to spot patterns of bias and reach some actionable insights. Therefore, you decide to shed light on the still-existing pay gap, understand its factors, direct your intervention, and guarantee that you discuss insights in a broader context of the business and workforce markets. In other words, you decide to go beyond reporting and go the extra mile to explore the data.</p>
+<p>What is the difference between reporting and exploring? To explore data, you must have an analytical mindset. It enables you to analyze information and identify patterns in the data to solve problems. So you use your curiosity by asking the question, “why?”. It will enable you to tell a straightforward story, impact any topic related to people, track improvement and progress, and certainly contribute to closing the gender pay gap.</p>
+<p>You may already have dashboards that enable you to present different metrics and KPIs and answer the questions: Did we reach our goals? How far are we from achieving our goals? However, by using dashboards, you can’t answer the question: Why? Instead, you need to analyze the factors that drive those KPIs presented on your dashboards. Therefore, you will explore the data beyond finding differences between men and women in compensation and explore how those differences occurred, implying what you should do about it. You’ll reach actionable insights by actively working with your data scientist. When you ask “why,” the data scientist will provide answers based on the data.</p>
+</div>
+<div id="analytics-methods-1" class="section level3 hasAnchor" number="3.3.4">
+<h3><span class="header-section-number">3.3.4</span> Analytics methods<a href="people-analytics-methods-and-use-cases.html#analytics-methods-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="analysis-using-r-1" class="section level3 hasAnchor" number="3.3.5">
+<h3><span class="header-section-number">3.3.5</span> Analysis using R<a href="people-analytics-methods-and-use-cases.html#analysis-using-r-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="people-analytics-methods-and-use-cases.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb12-2"><a href="people-analytics-methods-and-use-cases.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(Employees<span class="sc">$</span>Annual.Salary[Employees<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;F&quot;</span>], </span>
+<span id="cb12-3"><a href="people-analytics-methods-and-use-cases.html#cb12-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">col=</span><span class="st">&quot;orange&quot;</span>, <span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>), <span class="at">breaks =</span> <span class="dv">50</span>, <span class="at">freq =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="cn">NULL</span>, <span class="at">main =</span> <span class="st">&quot;Current Annual Salary - Women, Avg 73K&quot;</span>)</span>
+<span id="cb12-4"><a href="people-analytics-methods-and-use-cases.html#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">curve</span>(<span class="fu">dnorm</span> (x, <span class="at">mean =</span> <span class="fu">mean</span>(Employees<span class="sc">$</span>Annual.Salary), </span>
+<span id="cb12-5"><a href="people-analytics-methods-and-use-cases.html#cb12-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">sd =</span> <span class="fu">sd</span>(Employees<span class="sc">$</span>Annual.Salary)), <span class="at">add =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-6"><a href="people-analytics-methods-and-use-cases.html#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(Employees<span class="sc">$</span>Annual.Salary[Employees<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;F&quot;</span>], </span>
+<span id="cb12-7"><a href="people-analytics-methods-and-use-cases.html#cb12-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">horizontal =</span> <span class="cn">TRUE</span>, <span class="at">col=</span><span class="st">&quot;orange&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>))</span>
+<span id="cb12-8"><a href="people-analytics-methods-and-use-cases.html#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(Employees<span class="sc">$</span>Annual.Salary[Employees<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;M&quot;</span>], </span>
+<span id="cb12-9"><a href="people-analytics-methods-and-use-cases.html#cb12-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">col=</span><span class="st">&quot;lightblue&quot;</span>, <span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>), <span class="at">breaks =</span> <span class="dv">50</span>, <span class="at">freq =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="cn">NULL</span>, <span class="at">main =</span> <span class="st">&quot;Current Annual Salary - Men, Avg 77K&quot;</span>)</span>
+<span id="cb12-10"><a href="people-analytics-methods-and-use-cases.html#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">curve</span>(<span class="fu">dnorm</span> (x, <span class="at">mean =</span> <span class="fu">mean</span>(Employees<span class="sc">$</span>Annual.Salary), </span>
+<span id="cb12-11"><a href="people-analytics-methods-and-use-cases.html#cb12-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">sd =</span> <span class="fu">sd</span>(Employees<span class="sc">$</span>Annual.Salary)), <span class="at">add =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-12"><a href="people-analytics-methods-and-use-cases.html#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(Employees<span class="sc">$</span>Annual.Salary[Employees<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;M&quot;</span>], </span>
+<span id="cb12-13"><a href="people-analytics-methods-and-use-cases.html#cb12-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">horizontal =</span> <span class="cn">TRUE</span>, <span class="at">col=</span><span class="st">&quot;lightblue&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/gender-all-1.png" width="672" /></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="people-analytics-methods-and-use-cases.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb13-2"><a href="people-analytics-methods-and-use-cases.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary[EmployeesDiverse<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;F&quot;</span>], </span>
+<span id="cb13-3"><a href="people-analytics-methods-and-use-cases.html#cb13-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">col=</span><span class="st">&quot;orange&quot;</span>, <span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>), <span class="at">breaks =</span> <span class="dv">50</span>, <span class="at">freq =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="cn">NULL</span>, <span class="at">main =</span> <span class="st">&quot;Current Annual Salary - Women, Avg 72K&quot;</span>)</span>
+<span id="cb13-4"><a href="people-analytics-methods-and-use-cases.html#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">curve</span>(<span class="fu">dnorm</span> (x, <span class="at">mean =</span> <span class="fu">mean</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary), </span>
+<span id="cb13-5"><a href="people-analytics-methods-and-use-cases.html#cb13-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">sd =</span> <span class="fu">sd</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary)), <span class="at">add =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-6"><a href="people-analytics-methods-and-use-cases.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary[EmployeesDiverse<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;F&quot;</span>], </span>
+<span id="cb13-7"><a href="people-analytics-methods-and-use-cases.html#cb13-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">horizontal =</span> <span class="cn">TRUE</span>, <span class="at">col=</span><span class="st">&quot;orange&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>))</span>
+<span id="cb13-8"><a href="people-analytics-methods-and-use-cases.html#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary[EmployeesDiverse<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;M&quot;</span>], </span>
+<span id="cb13-9"><a href="people-analytics-methods-and-use-cases.html#cb13-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">col=</span><span class="st">&quot;lightblue&quot;</span>, <span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>), <span class="at">breaks =</span> <span class="dv">50</span>, <span class="at">freq =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="cn">NULL</span>, <span class="at">main =</span> <span class="st">&quot;Current Annual Salary - Men, Avg 78K&quot;</span>)</span>
+<span id="cb13-10"><a href="people-analytics-methods-and-use-cases.html#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="fu">curve</span>(<span class="fu">dnorm</span> (x, <span class="at">mean =</span> <span class="fu">mean</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary), </span>
+<span id="cb13-11"><a href="people-analytics-methods-and-use-cases.html#cb13-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">sd =</span> <span class="fu">sd</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary)), <span class="at">add =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-12"><a href="people-analytics-methods-and-use-cases.html#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary[EmployeesDiverse<span class="sc">$</span>Gender<span class="sc">==</span><span class="st">&quot;M&quot;</span>], </span>
+<span id="cb13-13"><a href="people-analytics-methods-and-use-cases.html#cb13-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">horizontal =</span> <span class="cn">TRUE</span>, <span class="at">col=</span><span class="st">&quot;lightblue&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">300000</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/gender-diverse-1.png" width="672" /></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="people-analytics-methods-and-use-cases.html#cb14-1" aria-hidden="true" tabindex="-1"></a>interaction2 <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(Employees<span class="sc">$</span>Annual.Salary, </span>
+<span id="cb14-2"><a href="people-analytics-methods-and-use-cases.html#cb14-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">by=</span><span class="fu">list</span>(Employees<span class="sc">$</span>Gender, Employees<span class="sc">$</span>Tenure), </span>
+<span id="cb14-3"><a href="people-analytics-methods-and-use-cases.html#cb14-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">FUN=</span>mean, <span class="at">na.rm=</span><span class="cn">TRUE</span>)</span>
+<span id="cb14-4"><a href="people-analytics-methods-and-use-cases.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(interaction2) <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Tenure&quot;</span>, <span class="st">&quot;Salary&quot;</span>)</span>
+<span id="cb14-5"><a href="people-analytics-methods-and-use-cases.html#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="people-analytics-methods-and-use-cases.html#cb14-6" aria-hidden="true" tabindex="-1"></a>interaction2plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>interaction2, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>Tenure, <span class="at">y=</span>Salary, <span class="at">color=</span>Gender)) <span class="sc">+</span></span>
+<span id="cb14-7"><a href="people-analytics-methods-and-use-cases.html#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">group =</span> Gender), <span class="at">size=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb14-8"><a href="people-analytics-methods-and-use-cases.html#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">name=</span><span class="st">&quot;Annual Salary&quot;</span>, <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">30000</span>,<span class="dv">100000</span>), <span class="at">labels =</span> scales<span class="sc">::</span>comma) <span class="sc">+</span></span>
+<span id="cb14-9"><a href="people-analytics-methods-and-use-cases.html#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;orange&quot;</span>, <span class="st">&quot;skyblue&quot;</span>)) <span class="sc">+</span> <span class="fu">theme_bw</span>()</span>
+<span id="cb14-10"><a href="people-analytics-methods-and-use-cases.html#cb14-10" aria-hidden="true" tabindex="-1"></a>interaction2plot</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/gender-tenure-all-1.png" width="672" /></p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="people-analytics-methods-and-use-cases.html#cb15-1" aria-hidden="true" tabindex="-1"></a>interaction2diverse <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(EmployeesDiverse<span class="sc">$</span>Annual.Salary, </span>
+<span id="cb15-2"><a href="people-analytics-methods-and-use-cases.html#cb15-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">by=</span><span class="fu">list</span>(EmployeesDiverse<span class="sc">$</span>Gender, EmployeesDiverse<span class="sc">$</span>Tenure), </span>
+<span id="cb15-3"><a href="people-analytics-methods-and-use-cases.html#cb15-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">FUN=</span>mean, <span class="at">na.rm=</span><span class="cn">TRUE</span>)</span>
+<span id="cb15-4"><a href="people-analytics-methods-and-use-cases.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(interaction2diverse) <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Tenure&quot;</span>, <span class="st">&quot;Salary&quot;</span>)</span>
+<span id="cb15-5"><a href="people-analytics-methods-and-use-cases.html#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="people-analytics-methods-and-use-cases.html#cb15-6" aria-hidden="true" tabindex="-1"></a>interaction2plotdiverse <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>interaction2diverse, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>Tenure, <span class="at">y=</span>Salary, <span class="at">color=</span>Gender)) <span class="sc">+</span></span>
+<span id="cb15-7"><a href="people-analytics-methods-and-use-cases.html#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">group =</span> Gender), <span class="at">size=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb15-8"><a href="people-analytics-methods-and-use-cases.html#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">name=</span><span class="st">&quot;Annual Salary&quot;</span>, <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">30000</span>,<span class="dv">100000</span>), <span class="at">labels =</span> scales<span class="sc">::</span>comma) <span class="sc">+</span></span>
+<span id="cb15-9"><a href="people-analytics-methods-and-use-cases.html#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;orange&quot;</span>, <span class="st">&quot;skyblue&quot;</span>)) <span class="sc">+</span> <span class="fu">theme_bw</span>()</span>
+<span id="cb15-10"><a href="people-analytics-methods-and-use-cases.html#cb15-10" aria-hidden="true" tabindex="-1"></a>interaction2plotdiverse</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/gender-tenure-diverse-1.png" width="672" /></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="people-analytics-methods-and-use-cases.html#cb16-1" aria-hidden="true" tabindex="-1"></a>reg2plotdiverse <span class="ot">&lt;-</span> EmployeesDiverse <span class="sc">%&gt;%</span></span>
+<span id="cb16-2"><a href="people-analytics-methods-and-use-cases.html#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(Tenure.Years, Annual.Salary, <span class="at">color=</span>Gender)) <span class="sc">+</span> </span>
+<span id="cb16-3"><a href="people-analytics-methods-and-use-cases.html#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb16-4"><a href="people-analytics-methods-and-use-cases.html#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="fu">aes</span>(<span class="at">colour=</span>Gender), <span class="at">size=</span><span class="fl">1.75</span>) <span class="sc">+</span> </span>
+<span id="cb16-5"><a href="people-analytics-methods-and-use-cases.html#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">200000</span>) <span class="sc">+</span></span>
+<span id="cb16-6"><a href="people-analytics-methods-and-use-cases.html#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;orange&quot;</span>, <span class="st">&quot;skyblue&quot;</span>)) <span class="sc">+</span> <span class="fu">theme_bw</span>()</span>
+<span id="cb16-7"><a href="people-analytics-methods-and-use-cases.html#cb16-7" aria-hidden="true" tabindex="-1"></a>reg2plotdiverse</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/gender-tenure-diverse-linear-1.png" width="672" /></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="people-analytics-methods-and-use-cases.html#cb17-1" aria-hidden="true" tabindex="-1"></a>reg2Aplotdiverse <span class="ot">&lt;-</span> EmployeesDiverse <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="people-analytics-methods-and-use-cases.html#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(Tenure.Years, Annual.Salary, <span class="at">color=</span>Gender, <span class="at">size=</span>Assignment)) <span class="sc">+</span>  <span class="co">#Part-time dots enlarged</span></span>
+<span id="cb17-3"><a href="people-analytics-methods-and-use-cases.html#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span> </span>
+<span id="cb17-4"><a href="people-analytics-methods-and-use-cases.html#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="fu">aes</span>(<span class="at">colour=</span>Gender), <span class="at">size=</span><span class="fl">1.75</span>) <span class="sc">+</span> </span>
+<span id="cb17-5"><a href="people-analytics-methods-and-use-cases.html#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">200000</span>) <span class="sc">+</span></span>
+<span id="cb17-6"><a href="people-analytics-methods-and-use-cases.html#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;orange&quot;</span>, <span class="st">&quot;skyblue&quot;</span>)) <span class="sc">+</span> <span class="fu">theme_bw</span>()</span>
+<span id="cb17-7"><a href="people-analytics-methods-and-use-cases.html#cb17-7" aria-hidden="true" tabindex="-1"></a>reg2Aplotdiverse</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/gender-tenure-diverse-linear-assignment-1.png" width="672" /></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="people-analytics-methods-and-use-cases.html#cb18-1" aria-hidden="true" tabindex="-1"></a>reg2Bplotdiverse <span class="ot">&lt;-</span> EmployeesDiverse <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="people-analytics-methods-and-use-cases.html#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(Tenure.Years, Annual.Salary, <span class="at">color=</span>Gender, <span class="at">size=</span>Assignment)) <span class="sc">+</span> </span>
+<span id="cb18-3"><a href="people-analytics-methods-and-use-cases.html#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span> </span>
+<span id="cb18-4"><a href="people-analytics-methods-and-use-cases.html#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="fu">aes</span>(<span class="at">colour=</span>Gender, <span class="at">linetype=</span>Assignment), <span class="at">size=</span><span class="fl">1.75</span>) <span class="sc">+</span> <span class="co">#Part-time line separated</span></span>
+<span id="cb18-5"><a href="people-analytics-methods-and-use-cases.html#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">200000</span>) <span class="sc">+</span></span>
+<span id="cb18-6"><a href="people-analytics-methods-and-use-cases.html#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;orange&quot;</span>, <span class="st">&quot;skyblue&quot;</span>)) <span class="sc">+</span> <span class="fu">theme_bw</span>()</span>
+<span id="cb18-7"><a href="people-analytics-methods-and-use-cases.html#cb18-7" aria-hidden="true" tabindex="-1"></a>reg2Bplotdiverse</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/gender-tenure-diverse-linear-assignment-2.png" width="672" /></p>
+</div>
+<div id="storytelling-with-data-1" class="section level3 hasAnchor" number="3.3.6">
+<h3><span class="header-section-number">3.3.6</span> Storytelling with data<a href="people-analytics-methods-and-use-cases.html#storytelling-with-data-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="conclusions-1" class="section level3 hasAnchor" number="3.3.7">
+<h3><span class="header-section-number">3.3.7</span> Conclusions<a href="people-analytics-methods-and-use-cases.html#conclusions-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+
+</div>
+</div>
+<div id="performance-measures" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> 4 Performance Measures<a href="people-analytics-methods-and-use-cases.html#performance-measures" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(Levels of measures, Factor Analysis)</p>
+
+</div>
+<div id="employee-attrition" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Employee Attrition<a href="people-analytics-methods-and-use-cases.html#employee-attrition" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(Predictive analytics, Logistic Regression)</p>
+
+</div>
+<div id="exit-surveys" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Exit Surveys<a href="people-analytics-methods-and-use-cases.html#exit-surveys" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(Text and Categorical data)</p>
+
+</div>
+<div id="teams-and-collaboration" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Teams and collaboration<a href="people-analytics-methods-and-use-cases.html#teams-and-collaboration" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(Organization Network Analysis)</p>
+
+</div>
+<div id="the-future-of-people-analytics" class="section level2 hasAnchor" number="3.8">
+<h2><span class="header-section-number">3.8</span> The future of People Analytics<a href="people-analytics-methods-and-use-cases.html#the-future-of-people-analytics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(Ethics considerations)</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="r-you-ready-getting-started.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/Littal/wondeRland/edit/master/3-People-Analytics-Methods.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/Littal/wondeRland/blob/master/3-People-Analytics-Methods.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

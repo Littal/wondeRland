@@ -1,0 +1,13 @@
+## Instalation
+
+There are only three things you need to run the code in this book, and you can get them all for free: [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/), and some R packages.
+
+First, install R. To download R, go to [CRAN](https://cloud.r-project.org/) (acronyms of the Comprehensive R Archive Network) and follow the instruction. When you finish installation, you'll have the R programming language on your device. Then, you can program and run the R code independently or in other computer programs, like Rstudio. 
+
+Secondly, download and install [RStudio](http://www.rstudio.com/download), the IDE (acronyms of integrated development environment) for R programming. Note that RStudio is not functional without installing R first. In the next section of this part of the book, Navigation, we'll look at this environment, where you write your R code, run it, and manage your working environment. 
+
+Lastly, you'll need to install some R packages, which include functions, datasets, and documentation that expands base R functionality. There are more than 18,000 packages, so which ones do you need? It depends on your domain, analysis, and preferences. In the Navigation section, I review some packages I used in this book. You'll find additional information in the code within each use case of the book's third part.
+
+Are these installations a one-time hassle? Probably not. R, Rstudio, and R packages frequently update as all things software. A new major R version comes out yearly, with 2-3 minor releases. In addition, R packages are updated from time to time. When you upgrade to a major R version, it requires reinstalling all your packages. RStudio is also updated a few times a year. Please check the colophon in the appendix if you are curious about the versions of R, Rstudio, and the packages I used when I wrote codes for this book.
+
+In case you need a comprehensive step-by-step guide for installing R and RStudio, I believe you'll find the right one within millions of results on Youtube or Google search. For example, many universities have published their tutorials. However, I refer to one resource: Follow the introduction in the book [R for Data Science](https://r4ds.had.co.nz/introduction.html) by Hadley Wickham and Garrett Grolemund, which is a valuable resource along your way, whatever it may be.   

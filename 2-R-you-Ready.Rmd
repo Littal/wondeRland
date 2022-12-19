@@ -1,0 +1,13 @@
+# R you ready? Getting Started
+
+My assumption about this book's readers is that they are either HR professionals or people analysts. 
+
+HR professionals may want to leverage the use cases of the book to improve their collaboration with data scientists that support their work. If you are amongst this group, please feel free to skip this part or read it to dismiss the mystery of a data scientist's desktop. 
+
+People Analysts may want to expand their tool kit with relevant use cases. If you are amongst this group and have short or no experience with R or RStudio, use the following instructions and resources to get ready to start your journey working with these tools. However, remember that there are other environments and programming languages you can choose. The debate about the most suitable tool for data science or People Analytics is beyond the scope of this book. Instead, I offer some orientation for the tools I use.
+
+To get started, I believe you need to follow four steps, which I include in this part. You can't use R and Rstudio without installing them first. Find the resources for **Installation** in the first section. Then, writing your first lines of code, you must understand how to navigate and find your path. I dedicate the second section to **Navigation** in this verse and reference resources for R code, R Packages, the IDE, and additional ways to get help. 
+
+The following section describes the **Analytics Process**, and its objective is to help you to integrate the use cases in the book. Lastly, I dedicated some paragraphs to reproducibility because I find that professionals in the field lack an understanding of its importance. However, **Reproducibility** is inherent to all three previous steps. 
+
+As Alice thought, she was never sure _*"what I'm going to be, from one minute to another!"*_ but her analytical mindset helped her to understand that she remains herself, even when changing her size to get into her next adventure. 
