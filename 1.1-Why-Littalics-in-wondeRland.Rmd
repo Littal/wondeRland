@@ -9,3 +9,5 @@ Inspired by the famous book [Alice's Adventure in Wonderland](https://en.wikiped
 The nickname Littalics is another representation of my connected dots. It started as Littalics on [Twitter](https://twitter.com/Littalics) and [Facebook](https://www.facebook.com/Littalics). This nickname referred to Analytics, Statistics, Infographics, Ethics, and all other hashtags ended with the suffix 'ics.' Eventually, people recognized me off-line with that name. So, [Littalics](https://www.littalics.com/) became a domain name and a business identity.
 
 The title of this book, Littalics in wondeRland, implies that it is about my journey in the field and my attempt to organize and share the complex body of knowledge that serves me. But before we take the deep dive into R, I'd like to share some context on the domain of expertise in which I used R. 
+
+\newpage
