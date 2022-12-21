@@ -1,1 +1,31 @@
 ## Reproducibility
+
+No matter how you analyze workforce data, your methods will fall into one or more of four categories: Research software, BI tools, Data science programming, and People Analytics products. However, the ability to reproduce your results is not the same in all of them. 
+
+The concept of reproducibility did not gain enough attention in People Analytics training and practice. In this section, I'll answer three fundamental questions about reproducibility: What is reproducibility? What aspects of reproducibility are essential in applied research for business, particularly People Analytics? Finally, how does using R programming contribute to research reproducibility? Hopefully, my answers will shed some light on this crucial topic.
+
+### What is reproducibility? 
+
+In general, reproducibility is a central principle in the foundation of the scientific method. Reproducible findings can be reliably achieved when the study is replicated using the same research methodology and analysis. Successful replications of a study are considered scientific knowledge.
+
+A reproducible study must provide sufficient detail about its methods, materials, and analysis so that other researchers can recreate the study exactly. Therefore, researchers offer details about their methodology in a typical writing style of scientific articles: research design, sample size, data collection methods, statistical analysis techniques, and more.
+
+### Reproducibility in business research
+
+In the business context, research reproducibility is somewhat different. The reliability and validity of a study are essential for informed decision-making. If research on people-related questions is not reproducible, it might lead to misleading conclusions, poor decision-making, and negative consequences for the business and its people.
+
+In the domain of people in the organization, any research affects various stakeholders: employees, candidates, managers, executives, and even clients, prospects, and society. Reproducibility is essential for building trust and for demonstrating transparency and integrity. The risks of irreproducibility may vary from a bad reputation to legal issues. 
+
+A research project is an expensive process for the organization. Investing time and resources in irreproducible research means that additional investment is needed when the process runs periodically or when new analysts or data scientists take the role of conducting it. 
+
+### R programming and reproducibility
+
+Reproducibility is relevant in each stage of the research. However, using R can contribute to reproducibility in two specific ways:
+
+First, R scripts document the entire data analysis process, including data manipulation, statistical modeling, and visualization, enabling others to replicate the study. Moreover, R scripts are easily shared, reused, and modified.
+
+Secondly, the R user community fosters collaboration that contributes to transparency and best reproducibility practices. Furthermore, R packages are fundamental for reproducible R code because they include reusable functions and documentation that describes how to use them.  
+
+<br/>
+
+To conclude, reproducibility is essential in business research, particularly in the domain of people. Unfortunately, many HR departments still rely on spreadsheets in their analytics endeavors in practices that lack documentation, so others can't track or reproduce it. Data scientists who write code in programming languages such as R can leverage access to libraries containing ready-made code and contribute their code documentation. Inherited reproducibility is a significant advantage in using R or other programming languages.
