@@ -11,6 +11,11 @@ r-packages
 your-ide
 getting-help
 analytics-process
+import-and-clean
+manipulate-and-transform
+explore-and-visualize
+analyze-and-model
+communicate-and-report
 reproducibility
 what-is-reproducibility
 reproducibility-in-business-research

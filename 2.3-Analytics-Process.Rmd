@@ -1,1 +1,25 @@
 ## Analytics Process
+
+
+People Analytics is all about exploring, inferring, and communicating data patterns. The objective is to support decisions related to people in the organization. Therefore, it is essential to understand how analytics serves as a phase in the decision-making process. To do so, excuse my nostalgia; I browse my graduation project written in 1995 to quote the DECIDE acronym. 
+
+The DECIDE model is a framework developed by marketing researchers, which I found in an early edition of Malhotra's book: "Marketing Research – An Applied Orientation" (Prentice Hall). Although I originally learned it in a different context of business research, it is undoubtedly applicable to the domain of people.
+
+The acronym DECIDE may stand for: **D**efine the problem, **E**xplore the factors, **C**hoose research design, **I**nvestigate and analyze, **D**raw conclusions and recommendations, and **E**valuate action effectiveness. Research is a loop process because the evaluation phase at its end leads to new problem definitions, therefore, a new or repeated study.
+
+The acronym DECIDE is essential because it emphasizes that every study in the business realm must start with a question in mind and end with actionable insights. The domain of people is not an exception. Defining the research objectives and drawing conclusions and recommendations are essentially the role of the research sponsor in the HR department. In a sense, it is the casing of the data scientist's role in the analysis phase.
+
+Therefore, when communicating with a data scientist to present the research objectives before the analysis phase or to extract study results for conclusions and recommendations, it is helpful to understand the analytics process from the point of view of the data scientist. This process includes five steps: Import and Clean; Manipulate and Transform; Explore and Visualize; Analyze and Model; Communicate and Report. So, let's delve into these steps. 
+
+### Import and Clean
+
+### Manipulate and Transform
+
+### Explore and Visualize
+
+### Analyze and Model
+
+### Communicate and Report
+
+
+When you cover the use cases section of the book, you'll notice that the complete steps in each use case were written in R code. Of course, it is not always the case since data scientists may use other programming languages or data analysis platforms. However, beyond the advantages of R that I shared in the introduction, one that deserves special attention is its inherited reproducibility, a term I will describe next. 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2.3 Analytics Process | Littalics in wondeRland</title>
   <meta name="description" content="2.3 Analytics Process | Littalics in wondeRland" />
-  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2.3 Analytics Process | Littalics in wondeRland" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Littal Shemer Haim" />
 
 
-<meta name="date" content="2022-12-21" />
+<meta name="date" content="2022-12-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -92,7 +92,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -105,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -153,7 +153,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.3" data-path="navigation.html"><a href="navigation.html#your-ide"><i class="fa fa-check"></i><b>2.2.3</b> Your IDE</a></li>
 <li class="chapter" data-level="2.2.4" data-path="navigation.html"><a href="navigation.html#getting-help"><i class="fa fa-check"></i><b>2.2.4</b> Getting Help</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="analytics-process.html"><a href="analytics-process.html"><i class="fa fa-check"></i><b>2.3</b> Analytics Process</a></li>
+<li class="chapter" data-level="2.3" data-path="analytics-process.html"><a href="analytics-process.html"><i class="fa fa-check"></i><b>2.3</b> Analytics Process</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="analytics-process.html"><a href="analytics-process.html#import-and-clean"><i class="fa fa-check"></i><b>2.3.1</b> Import and Clean</a></li>
+<li class="chapter" data-level="2.3.2" data-path="analytics-process.html"><a href="analytics-process.html#manipulate-and-transform"><i class="fa fa-check"></i><b>2.3.2</b> Manipulate and Transform</a></li>
+<li class="chapter" data-level="2.3.3" data-path="analytics-process.html"><a href="analytics-process.html#explore-and-visualize"><i class="fa fa-check"></i><b>2.3.3</b> Explore and Visualize</a></li>
+<li class="chapter" data-level="2.3.4" data-path="analytics-process.html"><a href="analytics-process.html#analyze-and-model"><i class="fa fa-check"></i><b>2.3.4</b> Analyze and Model</a></li>
+<li class="chapter" data-level="2.3.5" data-path="analytics-process.html"><a href="analytics-process.html#communicate-and-report"><i class="fa fa-check"></i><b>2.3.5</b> Communicate and Report</a></li>
+</ul></li>
 <li class="chapter" data-level="2.4" data-path="reproducibility.html"><a href="reproducibility.html"><i class="fa fa-check"></i><b>2.4</b> Reproducibility</a>
 <ul>
 <li class="chapter" data-level="2.4.1" data-path="reproducibility.html"><a href="reproducibility.html#what-is-reproducibility"><i class="fa fa-check"></i><b>2.4.1</b> What is reproducibility?</a></li>
@@ -211,7 +218,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="analytics-process" class="section level2 hasAnchor" number="2.3">
 <h2><span class="header-section-number">2.3</span> Analytics Process<a href="analytics-process.html#analytics-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>People Analytics is all about exploring, inferring, and communicating data patterns. The objective is to support decisions related to people in the organization. Therefore, it is essential to understand how analytics serves as a phase in the decision-making process. To do so, excuse my nostalgia; I browse my graduation project written in 1995 to quote the DECIDE acronym.</p>
+<p>The DECIDE model is a framework developed by marketing researchers, which I found in an early edition of Malhotra’s book: “Marketing Research – An Applied Orientation” (Prentice Hall). Although I originally learned it in a different context of business research, it is undoubtedly applicable to the domain of people.</p>
+<p>The acronym DECIDE may stand for: <strong>D</strong>efine the problem, <strong>E</strong>xplore the factors, <strong>C</strong>hoose research design, <strong>I</strong>nvestigate and analyze, <strong>D</strong>raw conclusions and recommendations, and <strong>E</strong>valuate action effectiveness. Research is a loop process because the evaluation phase at its end leads to new problem definitions, therefore, a new or repeated study.</p>
+<p>The acronym DECIDE is essential because it emphasizes that every study in the business realm must start with a question in mind and end with actionable insights. The domain of people is not an exception. Defining the research objectives and drawing conclusions and recommendations are essentially the role of the research sponsor in the HR department. In a sense, it is the casing of the data scientist’s role in the analysis phase.</p>
+<p>Therefore, when communicating with a data scientist to present the research objectives before the analysis phase or to extract study results for conclusions and recommendations, it is helpful to understand the analytics process from the point of view of the data scientist. This process includes five steps: Import and Clean; Manipulate and Transform; Explore and Visualize; Analyze and Model; Communicate and Report. So, let’s delve into these steps.</p>
+<div id="import-and-clean" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Import and Clean<a href="analytics-process.html#import-and-clean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="manipulate-and-transform" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Manipulate and Transform<a href="analytics-process.html#manipulate-and-transform" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="explore-and-visualize" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Explore and Visualize<a href="analytics-process.html#explore-and-visualize" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="analyze-and-model" class="section level3 hasAnchor" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> Analyze and Model<a href="analytics-process.html#analyze-and-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="communicate-and-report" class="section level3 hasAnchor" number="2.3.5">
+<h3><span class="header-section-number">2.3.5</span> Communicate and Report<a href="analytics-process.html#communicate-and-report" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When you cover the use cases section of the book, you’ll notice that the complete steps in each use case were written in R code. Of course, it is not always the case since data scientists may use other programming languages or data analysis platforms. However, beyond the advantages of R that I shared in the introduction, one that deserves special attention is its inherited reproducibility, a term I will describe next.</p>
 
+</div>
 </div>
             </section>
 
