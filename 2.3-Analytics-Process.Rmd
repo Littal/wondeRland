@@ -9,17 +9,31 @@ The acronym DECIDE may stand for: **D**efine the problem, **E**xplore the factor
 
 The acronym DECIDE is essential because it emphasizes that every study in the business realm must start with a question in mind and end with actionable insights. The domain of people is not an exception. Defining the research objectives and drawing conclusions and recommendations are essentially the role of the research sponsor in the HR department. In a sense, it is the casing of the data scientist's role in the analysis phase.
 
-Therefore, when communicating with a data scientist to present the research objectives before the analysis phase or to extract study results for conclusions and recommendations, it is helpful to understand the analytics process from the point of view of the data scientist. This process includes five steps: Import and Clean; Manipulate and Transform; Explore and Visualize; Analyze and Model; Communicate and Report. So, let's delve into these steps. 
+Therefore, when communicating with a data scientist to present the research objectives before the analysis phase or to extract study results for conclusions and recommendations, it is helpful to understand the analytics process from the point of view of the data scientist. This process includes five action steps: Importing and Cleaning; Manipulating and Transforming; Exploring and Visualizing; Analyzing and Modeling; Communicating and Reporting. So, let's delve into these steps.  
 
-### Import and Clean
 
-### Manipulate and Transform
+### Importing and Cleaning
 
-### Explore and Visualize
+Data import and cleaning are essential in analytics, laying the foundation for all subsequent phases. Ensuring that the data is accurate and ready for analysis avoids errors later in the process.
 
-### Analyze and Model
+This step involves bringing the data into the project environment and preparing it for analysis. It includes tasks such as: importing the data from its source, checking the data quality by identifying and filling in missing data, spotting invalid records and correcting errors, and removing duplicates.
 
-### Communicate and Report
+This step also includes structuring the data to make it appropriate for work and organizing it in a standard way, called [tidy data](https://r4ds.had.co.nz/tidy-data.html). This standard format has three key characteristics: each column represents a variable, each row represents a unique observation, and each value is the intersection of variable and observation. Tidy data allows data scientists to focus on the core analysis rather than getting bogged down in data preparation.
+
+Here are some of the most useful libraries available for importing and cleaning data for People Analysts who take their first steps in R: I suggest covering the documentation and [cheatsheets](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) of these libraries.
+
+*	**`readr`**  functions for reading and writing flat files, such as CSV
+*	**`tidyr`** 	functions for cleaning and reshaping data in a tidy format
+*	**`dplyr`** 	functions for manipulating and summarizing data 
+
+
+### Manipulating and Transforming
+
+### Exploring and Visualizing
+
+### Analyzing and Modeling
+
+### Communicating and Reporting
 
 
 When you cover the use cases section of the book, you'll notice that the complete steps in each use case were written in R code. Of course, it is not always the case since data scientists may use other programming languages or data analysis platforms. However, beyond the advantages of R that I shared in the introduction, one that deserves special attention is its inherited reproducibility, a term I will describe next. 

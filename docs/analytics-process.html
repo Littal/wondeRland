@@ -155,11 +155,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="analytics-process.html"><a href="analytics-process.html"><i class="fa fa-check"></i><b>2.3</b> Analytics Process</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="analytics-process.html"><a href="analytics-process.html#import-and-clean"><i class="fa fa-check"></i><b>2.3.1</b> Import and Clean</a></li>
-<li class="chapter" data-level="2.3.2" data-path="analytics-process.html"><a href="analytics-process.html#manipulate-and-transform"><i class="fa fa-check"></i><b>2.3.2</b> Manipulate and Transform</a></li>
-<li class="chapter" data-level="2.3.3" data-path="analytics-process.html"><a href="analytics-process.html#explore-and-visualize"><i class="fa fa-check"></i><b>2.3.3</b> Explore and Visualize</a></li>
-<li class="chapter" data-level="2.3.4" data-path="analytics-process.html"><a href="analytics-process.html#analyze-and-model"><i class="fa fa-check"></i><b>2.3.4</b> Analyze and Model</a></li>
-<li class="chapter" data-level="2.3.5" data-path="analytics-process.html"><a href="analytics-process.html#communicate-and-report"><i class="fa fa-check"></i><b>2.3.5</b> Communicate and Report</a></li>
+<li class="chapter" data-level="2.3.1" data-path="analytics-process.html"><a href="analytics-process.html#importing-and-cleaning"><i class="fa fa-check"></i><b>2.3.1</b> Importing and Cleaning</a></li>
+<li class="chapter" data-level="2.3.2" data-path="analytics-process.html"><a href="analytics-process.html#manipulating-and-transforming"><i class="fa fa-check"></i><b>2.3.2</b> Manipulating and Transforming</a></li>
+<li class="chapter" data-level="2.3.3" data-path="analytics-process.html"><a href="analytics-process.html#exploring-and-visualizing"><i class="fa fa-check"></i><b>2.3.3</b> Exploring and Visualizing</a></li>
+<li class="chapter" data-level="2.3.4" data-path="analytics-process.html"><a href="analytics-process.html#analyzing-and-modeling"><i class="fa fa-check"></i><b>2.3.4</b> Analyzing and Modeling</a></li>
+<li class="chapter" data-level="2.3.5" data-path="analytics-process.html"><a href="analytics-process.html#communicating-and-reporting"><i class="fa fa-check"></i><b>2.3.5</b> Communicating and Reporting</a></li>
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="reproducibility.html"><a href="reproducibility.html"><i class="fa fa-check"></i><b>2.4</b> Reproducibility</a>
 <ul>
@@ -222,21 +222,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The DECIDE model is a framework developed by marketing researchers, which I found in an early edition of Malhotra’s book: “Marketing Research – An Applied Orientation” (Prentice Hall). Although I originally learned it in a different context of business research, it is undoubtedly applicable to the domain of people.</p>
 <p>The acronym DECIDE may stand for: <strong>D</strong>efine the problem, <strong>E</strong>xplore the factors, <strong>C</strong>hoose research design, <strong>I</strong>nvestigate and analyze, <strong>D</strong>raw conclusions and recommendations, and <strong>E</strong>valuate action effectiveness. Research is a loop process because the evaluation phase at its end leads to new problem definitions, therefore, a new or repeated study.</p>
 <p>The acronym DECIDE is essential because it emphasizes that every study in the business realm must start with a question in mind and end with actionable insights. The domain of people is not an exception. Defining the research objectives and drawing conclusions and recommendations are essentially the role of the research sponsor in the HR department. In a sense, it is the casing of the data scientist’s role in the analysis phase.</p>
-<p>Therefore, when communicating with a data scientist to present the research objectives before the analysis phase or to extract study results for conclusions and recommendations, it is helpful to understand the analytics process from the point of view of the data scientist. This process includes five steps: Import and Clean; Manipulate and Transform; Explore and Visualize; Analyze and Model; Communicate and Report. So, let’s delve into these steps.</p>
-<div id="import-and-clean" class="section level3 hasAnchor" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Import and Clean<a href="analytics-process.html#import-and-clean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Therefore, when communicating with a data scientist to present the research objectives before the analysis phase or to extract study results for conclusions and recommendations, it is helpful to understand the analytics process from the point of view of the data scientist. This process includes five action steps: Importing and Cleaning; Manipulating and Transforming; Exploring and Visualizing; Analyzing and Modeling; Communicating and Reporting. So, let’s delve into these steps.</p>
+<div id="importing-and-cleaning" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Importing and Cleaning<a href="analytics-process.html#importing-and-cleaning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data import and cleaning are essential in analytics, laying the foundation for all subsequent phases. Ensuring that the data is accurate and ready for analysis avoids errors later in the process.</p>
+<p>This step involves bringing the data into the project environment and preparing it for analysis. It includes tasks such as: importing the data from its source, checking the data quality by identifying and filling in missing data, spotting invalid records and correcting errors, and removing duplicates.</p>
+<p>This step also includes structuring the data to make it appropriate for work and organizing it in a standard way, called <a href="https://r4ds.had.co.nz/tidy-data.html">tidy data</a>. This standard format has three key characteristics: each column represents a variable, each row represents a unique observation, and each value is the intersection of variable and observation. Tidy data allows data scientists to focus on the core analysis rather than getting bogged down in data preparation.</p>
+<p>Here are some of the most useful libraries available for importing and cleaning data for People Analysts who take their first steps in R: I suggest covering the documentation and <a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">cheatsheets</a> of these libraries.</p>
+<ul>
+<li><strong><code>readr</code></strong> functions for reading and writing flat files, such as CSV</li>
+<li><strong><code>tidyr</code></strong> functions for cleaning and reshaping data in a tidy format</li>
+<li><strong><code>dplyr</code></strong> functions for manipulating and summarizing data</li>
+</ul>
 </div>
-<div id="manipulate-and-transform" class="section level3 hasAnchor" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> Manipulate and Transform<a href="analytics-process.html#manipulate-and-transform" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="manipulating-and-transforming" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Manipulating and Transforming<a href="analytics-process.html#manipulating-and-transforming" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="explore-and-visualize" class="section level3 hasAnchor" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> Explore and Visualize<a href="analytics-process.html#explore-and-visualize" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="exploring-and-visualizing" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Exploring and Visualizing<a href="analytics-process.html#exploring-and-visualizing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="analyze-and-model" class="section level3 hasAnchor" number="2.3.4">
-<h3><span class="header-section-number">2.3.4</span> Analyze and Model<a href="analytics-process.html#analyze-and-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="analyzing-and-modeling" class="section level3 hasAnchor" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> Analyzing and Modeling<a href="analytics-process.html#analyzing-and-modeling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="communicate-and-report" class="section level3 hasAnchor" number="2.3.5">
-<h3><span class="header-section-number">2.3.5</span> Communicate and Report<a href="analytics-process.html#communicate-and-report" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="communicating-and-reporting" class="section level3 hasAnchor" number="2.3.5">
+<h3><span class="header-section-number">2.3.5</span> Communicating and Reporting<a href="analytics-process.html#communicating-and-reporting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When you cover the use cases section of the book, you’ll notice that the complete steps in each use case were written in R code. Of course, it is not always the case since data scientists may use other programming languages or data analysis platforms. However, beyond the advantages of R that I shared in the introduction, one that deserves special attention is its inherited reproducibility, a term I will describe next.</p>
 
 </div>
