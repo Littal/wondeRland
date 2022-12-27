@@ -23,7 +23,7 @@
 <meta name="author" content="Littal Shemer Haim" />
 
 
-<meta name="date" content="2022-12-26" />
+<meta name="date" content="2022-12-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -228,7 +228,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Data import and cleaning are essential in analytics, laying the foundation for all subsequent phases. Ensuring that the data is accurate and ready for analysis avoids errors later in the process.</p>
 <p>This step involves bringing the data into the project environment and preparing it for analysis. It includes tasks such as: importing the data from its source, checking the data quality by identifying and filling in missing data, spotting invalid records and correcting errors, and removing duplicates.</p>
 <p>This step also includes structuring the data to make it appropriate for work and organizing it in a standard way, called <a href="https://r4ds.had.co.nz/tidy-data.html">tidy data</a>. This standard format has three key characteristics: each column represents a variable, each row represents a unique observation, and each value is the intersection of variable and observation. Tidy data allows data scientists to focus on the core analysis rather than getting bogged down in data preparation.</p>
-<p>Here are some of the most useful libraries available for importing and cleaning data for People Analysts who take their first steps in R: I suggest covering the documentation and <a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">cheatsheets</a> of these libraries.</p>
+<p>Here are some of the most useful libraries available for importing and cleaning data for People Analysts who take their first steps in R: I suggest covering the documentation and <a href="https://posit.co/resources/cheatsheets/">cheatsheets</a> of these libraries.</p>
 <ul>
 <li><strong><code>readr</code></strong> functions for reading and writing flat files, such as CSV</li>
 <li><strong><code>tidyr</code></strong> functions for cleaning and reshaping data in a tidy format</li>
@@ -237,6 +237,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="manipulating-and-transforming" class="section level3 hasAnchor" number="2.3.2">
 <h3><span class="header-section-number">2.3.2</span> Manipulating and Transforming<a href="analytics-process.html#manipulating-and-transforming" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data manipulation and transformation are vital in every data science project because they prepare the data for analysis according to the research objectives and enable the revealing of patterns and relationships in the data later in the project.</p>
+<p>This step involves modifying and rearranging the data to make it more suitable for analysis and modeling. It includes tasks such as grouping and summarizing records, selecting and filtering subsets based on specific criteria, and transforming the data to scale or normalize it.</p>
+<p>One fundamental transformation is related to the data format, i.e., its structure: “long” or “wide.” For example, suppose that each record in a dataset represents a group whose identity is recorded in the first column. In a wide format, the first column contains unique values. But in a long format, the first column contains values that may repeat, so the information of a specific group may be recorded in several rows.</p>
+<p>Both “long” and “wide” formats include the same information but in a different structure. Most datasets you’ll encounter in People Analytics are probably in a wide format. However, for certain functions, e.g., when visualizing data, you’ll have to convert the data to a long format.</p>
+<p>An essential part of transforming the data is manipulating variables according to their particular classes, e.g., dates, text, or categorical variables. Therefore, in addition to the R libraries mentioned earlier, it is worth exploring the following libraries in the context of data transformations. Again, I recommend covering the documentation and cheatsheets of these libraries while remembering there are many other libraries to explore.</p>
+<ul>
+<li><strong><code>stringr</code></strong> functions for working with strings (character variables), e.g., searching for patterns, extracting substrings, and manipulations.</li>
+<li><strong><code>lubridate</code></strong> functions for working with dates and times, e.g., parsing from strings, extracting components, and calculations.</li>
+<li><strong><code>forcats</code></strong> functions for working with factors (categorical variables), e.g., reordering factor levels, collapsing levels, and more.</li>
+</ul>
+<p>These libraries simplify data scientists’ workflow when transforming non-numeric variables, which are very common in People Analytics.</p>
 </div>
 <div id="exploring-and-visualizing" class="section level3 hasAnchor" number="2.3.3">
 <h3><span class="header-section-number">2.3.3</span> Exploring and Visualizing<a href="analytics-process.html#exploring-and-visualizing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
