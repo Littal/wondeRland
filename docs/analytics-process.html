@@ -23,7 +23,7 @@
 <meta name="author" content="Littal Shemer Haim" />
 
 
-<meta name="date" content="2022-12-27" />
+<meta name="date" content="2023-01-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -136,6 +136,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">wondeRland</a></li>
 
 <li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="why-littalics-in-wonderland.html"><a href="why-littalics-in-wonderland.html"><i class="fa fa-check"></i><b>1.1</b> Why Littalics in wondeRland?</a></li>
@@ -251,6 +252,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="exploring-and-visualizing" class="section level3 hasAnchor" number="2.3.3">
 <h3><span class="header-section-number">2.3.3</span> Exploring and Visualizing<a href="analytics-process.html#exploring-and-visualizing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Exploring and visualizing the data first, before modeling or continuing with advanced analytics, is an essential step in any project. It enables the data scientist to gain fundamental insights about patterns, factors, relationships, or trends that may be essential for the project’s goals. Such understanding will be later helpful for informed decisions about further analysis, modeling methods, and potential challenges.</p>
+<p>There are typically two primary techniques to explore the data: plotting it and examining its summary statistics. The outputs of these techniques enable us to understand the distributions in the data, including centers, dispersions, skewness, and outliers. Understanding distributions is crucial at this stage because the distributions of variables significantly impact any analysis, particularly in choosing the appropriate modeling techniques.</p>
+<p>In addition, this stage is also an essential step in communication at an early stage of the project. The research sponsors usually expect to receive some findings early in the project. By sharing some informative visualizations and information about trends, the data scientist can effectively lower the pressure from the research stakeholders, keep them involved and sometimes get more directions based on the implications of the data exploration for further analysis.</p>
+<p>In the case of continuous variables, the fundamental charts commonly used in a project’s exploration phase are histograms, boxplots, and scatterplots. They are suitable for exploration because they enable one to grasp the distributions well. Bar charts are also typical for exploring categorical variables. I included these charts in the following use cases presented in the book, but as you will see, there are many other types of charts to choose from, depending on the nature of the data.</p>
+<p>There are many helpful R libraries for data visualization. But the most fundamental is <strong><code>ggplot2</code></strong>. This famous library provides a wide range of chart types and features, and it is particularly well-suited for creating complex plots with multiple aesthetic options. Many other libraries for visualization are based on it to provide additional customizations.</p>
+<p>The underlying philosophy of <strong><code>ggplot2</code></strong> is The Grammar of Graphics, a conceptual framework that became a standard approach to data visualization. The idea is that statistical graphics can be spoken as a language, with specific grammar rules for combining different plot elements to create a compelling and informative visualization.</p>
+<p>The four components of statistical graphics are data, aesthetic mappings (axis and attributes), geoms (data representations), and additional statistical transformations (e.g., binning, smoothing). The Grammar of Graphics that ggplot2 uses is described in detail in the book <a href="https://ggplot2-book.org/index.html">ggplot2: Elegant Graphics for Data Analysis</a> by Hadley Wickham et al. </p>
 </div>
 <div id="analyzing-and-modeling" class="section level3 hasAnchor" number="2.3.4">
 <h3><span class="header-section-number">2.3.4</span> Analyzing and Modeling<a href="analytics-process.html#analyzing-and-modeling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
