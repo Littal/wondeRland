@@ -43,3 +43,6 @@ employee-attrition
 exit-surveys
 teams-and-collaboration
 the-future-of-people-analytics
+references
+r-open-books
+open-datasets

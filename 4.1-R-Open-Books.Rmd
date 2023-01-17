@@ -1,0 +1,16 @@
+## R Open Books
+
+
+Ismay C., Kim A. Y., (2019) **Statistical Inference via Data Science: A ModernDive into R and the Tidyverse**, CRC Press [Kindle Version](https://www.amazon.com/Statistical-Inference-via-Data-Science-ebook-dp-B0831SYN93/dp/B0831SYN93/), [Online Open Version](https://moderndive.com/index.html)
+
+
+McNulty K., (2021) **Handbook of Regression Modeling in People Analytics**, CRC Press [Kindle Version](https://www.amazon.com/Handbook-Regression-Modeling-People-Analytics-ebook-dp-B097MR5TGC/dp/B097MR5TGC/), [Online Open Version](https://peopleanalytics-regression-book.org/the-basics-of-the-r-programming-language.html)
+
+
+Wickham H., Grolemund G., (2017) **R for Data Science: Import, Tidy, Transform, Visualize, and Model Data**, O'Reilly [Kindle Version](https://www.amazon.com/Data-Science-Transform-Visualize-Model-ebook-dp-B01NAJAEN5/dp/B01NAJAEN5/), [Online Open Version](https://r4ds.had.co.nz/)
+
+
+Wickham H., Navarro D., and Thomas Lin Pedersen T.L., (2016) **ggplot2: Elegant Graphics for Data Analysis**, Springer [Kindle Version](https://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis-ebook/dp/B01GVCRF6M/), [Online Open Version](https://ggplot2-book.org/index.html)
+
+
+Xie Y., Dervieux C., Riederer E., (2020) **R Markdown Cookbook**, CRC Press [Kindle Version](https://www.amazon.com/Markdown-Cookbook-Chapman-Hall-CRC-ebook/dp/B08JW8SPYQ/), [Online Open Version](https://bookdown.org/yihui/rmarkdown-cookbook/)

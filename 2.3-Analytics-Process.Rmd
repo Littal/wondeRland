@@ -65,7 +65,40 @@ The four components of statistical graphics are data, aesthetic mappings (axis a
 
 ### Analyzing and Modeling
 
+Analyzing and modeling refer to selecting, using, and validating mathematical or statistical tools and algorithms to infer or predict based on the data. 
+
+While analyzing and modeling data may be perceived as the essential phase in any analytics process, it is crucial to understand two conditions for its success: First, the data scientist needs to have a question in mind, and second, success depends on the former phases of the process. 
+
+At this point, I'd like to remind you that your proactivity as an HR professional in the conversation and collaboration with the data scientist is invaluable to the project's success because it enables both raising the relevant questions and access to appropriate and maintained datasets.
+
+Having a straightforward question in mind when analyzing and modeling data is vital for two main reasons: First, it helps to focus the analysis and modeling efforts and avoid getting lost or wasting time on irrelevant analyses or models. A well-defined question guides the selection of appropriate methods for the research objective, for example, comparing groups, exploring trends, or predicting a specific outcome. 
+
+Secondly, a question in mind allows you to frame the findings and results in the business context, which make it easier to communicate the insights and recommendations to research sponsors and decision-makers. This business context is also relevant to discuss the research limitations, constraints, and potential biases.
+
+When we are ready with a question in mind and enthusiast to start analyzing and modeling, we should have already imported and cleaned the data, transformed and manipulated it to make it ready to work with, and gained a pretty good orientation after exploring and visualizing it. So now, we should pick a few mathematical and statistical tools and algorithms out of enormous options. These tools will enable us to infer insights and make predictions, but only if we pick the right ones and use them on suitable datasets we prepared in advance.
+
+An important  distinction to make here is between inferential statistics and predictive analytics. Both approaches are frequently used, but they have a critical difference: Inferential statistics enables one to test hypotheses and infer about a population based on a sample. In contrast, predictive analytics allows modeling data patterns to make predictions about new and unseen data. 
+
+Each approach uses different assumptions about the data types and distributions and has different ways to evaluate findings and results. In the use cases in the following sections, I'll relate to these assumptions and evaluations based on the tool used. 
+Both inferential statistics and predictive analytics have so many R libraries that this book will be too short of mentioning them all. Frankly, I know only a handsome out of the thousands of packages. Still, beyond Tidyverse libraries discussed earlier that are relevant to all use cases, I'll mention suggested libraries that may be a good start in each one. 
+
+However, note that R programming language evolves constantly, and so do we. Therefore, your library selection may change over time. Nevertheless, your selected libraries will always depend on the research objectives and the relevant analysis or modeling tools. 
+
+
 ### Communicating and Reporting
 
+The final phase of the analytics process is communicating the results. However, this is the final phase only from the point of view of a data scientist. The reporting tools and contents will serve the research sponsor for conclusions and recommendations that will be a basis for discussions and decision-making. 
+
+The primary goal of this phase is to clearly and effectively communicate the main findings and insights and to provide guidance for using these findings and insights for informed business decisions. Therefore, the data scientist's deliverables should be designed as a friendly tool that is easily operated and understood by non-technical audiences.
+
+A friendly tool is insufficient, even if it is most visually appealing. Therefore, any communication and reporting format must include A clear explanation of the following: the analysis goal, the methods used to collect and analyze the data, the results and their accuracy, a summary that highlights the main findings and conclusions, and references for external sources. 
+
+There are many ways to communicate and report findings at the end of the analytics process. Although R scripts are included in many data visualization tools, such as interactive dashboards, I'll mention two other formats which are congruent to this book:
+
+*	**R Markdown**: A powerful tool that combines text, code, and output (including visualization) in one document and is used to create reports, presentations, and even websites. The book [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/) by Yihui Xie et al. is a comprehensive guide for this tool.
+
+*	**Shiny**: A web application framework for R that enables the creation of interactive web apps to share results.
+
+<br/>
 
 When you cover the use cases section of the book, you'll notice that the complete steps in each use case were written in R code. Of course, it is not always the case since data scientists may use other programming languages or data analysis platforms. However, beyond the advantages of R that I shared in the introduction, one that deserves special attention is its inherited reproducibility, a term I will describe next. 
