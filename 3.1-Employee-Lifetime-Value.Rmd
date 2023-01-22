@@ -1,5 +1,30 @@
 ## Employee Lifetime Value
 
-(Data preparation)
+In this section, we'll define Employee Lifetime Value and explore how **integrating data** from different sources and appropriately **preparing data** has a considerable advantage in analytics. I based this section on my guest lecture at Stanford University's People Analytics program in June 2022 and a previous article on my blog: [Employee Lifetime Value](https://www.littalics.com/employee-lifetime-value/).
+
+
+
+### The use case 
+
+Employee Lifetime Value (ELV) refers to the expected value the organization gains in the entire time an employee in a particular role spends working. You probably heard in your career that "people are our most important asset." It makes sense. People plan and execute the company's strategy, create competitive advantage, maintain customer relations, and bring innovation to meet future challenges and needs. This statement can be quantified using ELV. 
+
+ELV is a helpful scheme to present a business case of HR interventions because it knits people processes with business outcomes. HR manages various operations throughout the employee lifecycle: workforce planning, recruitment, onboarding, learning and development, feedback and evaluation, recognition and reward, promotion and internal mobility, employee experience, safety and welfare, and retirement. 
+
+People processes create aggregated workforce capabilities: engagement, culture, efficiency, leadership, innovation, and so forth. Those capabilities enable the organization to achieve its business goals: productivity, quality, and customer satisfaction, resulting in business outcomes, e.g., revenue growth and stakeholders' return.
+
+The employee's output varies during his employment in the organization. It is negative initially because of the costs of recruitment, onboarding, and training, and when the employee is still not productive enough. Then, a positive output rises and stabilizes until the employee gets burned out or decides to leave. Therefore, it is insightful, to sum up the net value over time, that is, what the employee produces, subtracting the employment cost, and explore the change as a result of HR intervention.
+
+For example, we can explore the impact on the total employee outputs when our interventions shorten the time to productivity, reach a higher result, continue improvement for a longer period, and extend the time that the employee remains in the organization. 
+
+
+
+### Data source
+
+The data in this use case is a simulation. However, its structure and sources are based on a real case study from a small company. It contains datasets of two hypothetical recruitment cycles in a factory: The first employee group landed jobs in the year's first half, and the second group started in the second half.
+
+To analyze ELV, we need to integrate each group's data from different sources. Specifically, some sources include information about employment costs, while others have output records. In real life, we combine data from the core HR platform, payment platform, and business unit.
+
+Assuming that no People Analytics platform automates data integration from different sources, the first step in this usecase would be choosing the relevant records from each platform and combining them all.  
+
 
 

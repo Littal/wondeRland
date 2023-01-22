@@ -23,7 +23,7 @@
 <meta name="author" content="Littal Shemer Haim" />
 
 
-<meta name="date" content="2023-01-17" />
+<meta name="date" content="2023-01-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -171,11 +171,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html"><i class="fa fa-check"></i><b>3</b> People Analytics Methods and Use Cases</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html"><i class="fa fa-check"></i><b>3.1</b> Employee Lifetime Value</a></li>
+<li class="chapter" data-level="3.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html"><i class="fa fa-check"></i><b>3.1</b> Employee Lifetime Value</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#the-use-case"><i class="fa fa-check"></i><b>3.1.1</b> The use case</a></li>
+<li class="chapter" data-level="3.1.2" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#data-source"><i class="fa fa-check"></i><b>3.1.2</b> Data source</a></li>
+</ul></li>
 <li class="chapter" data-level="3.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html"><i class="fa fa-check"></i><b>3.2</b> Employee Absenteeism</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#the-use-case"><i class="fa fa-check"></i><b>3.2.1</b> The use case</a></li>
-<li class="chapter" data-level="3.2.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#data-source"><i class="fa fa-check"></i><b>3.2.2</b> Data source</a></li>
+<li class="chapter" data-level="3.2.1" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#the-use-case-1"><i class="fa fa-check"></i><b>3.2.1</b> The use case</a></li>
+<li class="chapter" data-level="3.2.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#data-source-1"><i class="fa fa-check"></i><b>3.2.2</b> Data source</a></li>
 <li class="chapter" data-level="3.2.3" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#hr-briefing"><i class="fa fa-check"></i><b>3.2.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.2.4" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analytics-methods"><i class="fa fa-check"></i><b>3.2.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.2.5" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analysis-using-r"><i class="fa fa-check"></i><b>3.2.5</b> Analysis using R</a></li>
@@ -184,8 +188,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html"><i class="fa fa-check"></i><b>3.3</b> Gender Pay Gap</a>
 <ul>
-<li class="chapter" data-level="3.3.1" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#the-use-case-1"><i class="fa fa-check"></i><b>3.3.1</b> The use case</a></li>
-<li class="chapter" data-level="3.3.2" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#data-source-1"><i class="fa fa-check"></i><b>3.3.2</b> Data source</a></li>
+<li class="chapter" data-level="3.3.1" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#the-use-case-2"><i class="fa fa-check"></i><b>3.3.1</b> The use case</a></li>
+<li class="chapter" data-level="3.3.2" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#data-source-2"><i class="fa fa-check"></i><b>3.3.2</b> Data source</a></li>
 <li class="chapter" data-level="3.3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#hr-briefing-1"><i class="fa fa-check"></i><b>3.3.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.3.4" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analytics-methods-1"><i class="fa fa-check"></i><b>3.3.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.3.5" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analysis-using-r-1"><i class="fa fa-check"></i><b>3.3.5</b> Analysis using R</a></li>
@@ -225,15 +229,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="gender-pay-gap" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Gender Pay Gap<a href="gender-pay-gap.html#gender-pay-gap" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this section, we’ll discuss Gender Pay Gap and leverage the topic to practice <strong>hypotheses</strong> setting and testing by <strong>ANOVA</strong> and <strong>Linear Regression</strong>. I based this section on three articles published on my blog: (1) <a href="https://www.littalics.com/gender-pay-gap-and-people-analytics-a-practice-with-open-data/">Gender Pay Gap: Practice People Analytics With Open Data</a>, (2) <a href="https://www.littalics.com/finding-hidden-patterns-in-gender-pay-gap-data/">Finding Hidden Patterns In Gender Pay Gap Data</a>, and (3) <a href="https://www.littalics.com/gender-pay-gap-more-hidden-patterns/">Gender Pay Gap: More Hidden Patterns</a>.</p>
-<div id="the-use-case-1" class="section level3 hasAnchor" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> The use case<a href="gender-pay-gap.html#the-use-case-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="the-use-case-2" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> The use case<a href="gender-pay-gap.html#the-use-case-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The gender pay gap exists despite regulation, policies, hype, and preoccupation with the subject. Women still earn less than men in many countries, sectors, and roles. Moreover, the gap has been persistent over the years.</p>
 <p>There is no single cause for the gender pay gap. The reasons include: Gender-biased industries and roles in which female-dominated jobs often have lower wages and in which women are under-represented in high-income jobs; Bias and discrimination in recruitment, promotion, and compensation decisions; Disproportionate share of unpaid domestic work and care that women tend to handle more; Women’s careers are impacted by more time spent out of work as parents, and suffer more from the lack work flexibility in senior roles.</p>
 <p>To address the gender pay gap, employers may intervene in different ways. First, they need to analyze their pay data and processes. Then, after understanding the source of bias, they can take action and review the impact over time.</p>
 <p>Closing the gender pay gap is essential for everybody, not only women. Employers who take action to close the pay gap may benefit from higher retention, improved employee engagement, higher levels of productivity, and lower legal risks. In addition, the entire society may benefit as women increase their bargaining power and independence and decrease the chance of poverty later in life.</p>
 </div>
-<div id="data-source-1" class="section level3 hasAnchor" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Data source<a href="gender-pay-gap.html#data-source-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="data-source-2" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Data source<a href="gender-pay-gap.html#data-source-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>My source and inspiration for this case study was a dataset of employee salaries in a municipal authority organization, <a href="https://data.montgomerycountymd.gov/browse?category=Human+Resources">Montgomery County, Maryland</a>, in 2017. For public transparency, this organization shares its dataset. The employee salaries in 2017 contained almost 10 thousand records and included annual salary information and some demographics and background variables (gender, tenure, role, department, full and part-time position). However, for our educational purpose, I anonymized and randomized it, so, from the following findings, it would be impossible to point to individuals or even recognize the organization. But I guarantee that the dataset I used is realistic.</p>
 <p>Before we proceed to the HR briefing, there are some notes worth mentioning about this dataset. First, it includes only binary gender categories, restricting the analysis to comparing only men vs. women. However, some organizations use more gender categories nowadays.</p>
 <p>Secondly, in many organizations, the data about employees’ occupation, seniority, gender, mode of employment, and salary details are likely to be stored in more than one platform, for example, the HR platform and payroll software. Moreover, there may be more than one payroll system in global organizations, and it is necessary to merge the data and manipulate it for a unified currency. If your platforms are not integrated, you must incorporate data from different sources for your project and make sure that your process is reproducible.</p>

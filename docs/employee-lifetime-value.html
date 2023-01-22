@@ -23,7 +23,7 @@
 <meta name="author" content="Littal Shemer Haim" />
 
 
-<meta name="date" content="2023-01-17" />
+<meta name="date" content="2023-01-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -171,11 +171,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="people-analytics-methods-and-use-cases.html"><a href="people-analytics-methods-and-use-cases.html"><i class="fa fa-check"></i><b>3</b> People Analytics Methods and Use Cases</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html"><i class="fa fa-check"></i><b>3.1</b> Employee Lifetime Value</a></li>
+<li class="chapter" data-level="3.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html"><i class="fa fa-check"></i><b>3.1</b> Employee Lifetime Value</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#the-use-case"><i class="fa fa-check"></i><b>3.1.1</b> The use case</a></li>
+<li class="chapter" data-level="3.1.2" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#data-source"><i class="fa fa-check"></i><b>3.1.2</b> Data source</a></li>
+</ul></li>
 <li class="chapter" data-level="3.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html"><i class="fa fa-check"></i><b>3.2</b> Employee Absenteeism</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#the-use-case"><i class="fa fa-check"></i><b>3.2.1</b> The use case</a></li>
-<li class="chapter" data-level="3.2.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#data-source"><i class="fa fa-check"></i><b>3.2.2</b> Data source</a></li>
+<li class="chapter" data-level="3.2.1" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#the-use-case-1"><i class="fa fa-check"></i><b>3.2.1</b> The use case</a></li>
+<li class="chapter" data-level="3.2.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#data-source-1"><i class="fa fa-check"></i><b>3.2.2</b> Data source</a></li>
 <li class="chapter" data-level="3.2.3" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#hr-briefing"><i class="fa fa-check"></i><b>3.2.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.2.4" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analytics-methods"><i class="fa fa-check"></i><b>3.2.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.2.5" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analysis-using-r"><i class="fa fa-check"></i><b>3.2.5</b> Analysis using R</a></li>
@@ -184,8 +188,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html"><i class="fa fa-check"></i><b>3.3</b> Gender Pay Gap</a>
 <ul>
-<li class="chapter" data-level="3.3.1" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#the-use-case-1"><i class="fa fa-check"></i><b>3.3.1</b> The use case</a></li>
-<li class="chapter" data-level="3.3.2" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#data-source-1"><i class="fa fa-check"></i><b>3.3.2</b> Data source</a></li>
+<li class="chapter" data-level="3.3.1" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#the-use-case-2"><i class="fa fa-check"></i><b>3.3.1</b> The use case</a></li>
+<li class="chapter" data-level="3.3.2" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#data-source-2"><i class="fa fa-check"></i><b>3.3.2</b> Data source</a></li>
 <li class="chapter" data-level="3.3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#hr-briefing-1"><i class="fa fa-check"></i><b>3.3.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.3.4" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analytics-methods-1"><i class="fa fa-check"></i><b>3.3.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.3.5" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analysis-using-r-1"><i class="fa fa-check"></i><b>3.3.5</b> Analysis using R</a></li>
@@ -224,8 +228,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="employee-lifetime-value" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Employee Lifetime Value<a href="employee-lifetime-value.html#employee-lifetime-value" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>(Data preparation)</p>
+<p>In this section, we’ll define Employee Lifetime Value and explore how <strong>integrating data</strong> from different sources and appropriately <strong>preparing data</strong> has a considerable advantage in analytics. I based this section on my guest lecture at Stanford University’s People Analytics program in June 2022 and a previous article on my blog: <a href="https://www.littalics.com/employee-lifetime-value/">Employee Lifetime Value</a>.</p>
+<div id="the-use-case" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> The use case<a href="employee-lifetime-value.html#the-use-case" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Employee Lifetime Value (ELV) refers to the expected value the organization gains in the entire time an employee in a particular role spends working. You probably heard in your career that “people are our most important asset.” It makes sense. People plan and execute the company’s strategy, create competitive advantage, maintain customer relations, and bring innovation to meet future challenges and needs. This statement can be quantified using ELV.</p>
+<p>ELV is a helpful scheme to present a business case of HR interventions because it knits people processes with business outcomes. HR manages various operations throughout the employee lifecycle: workforce planning, recruitment, onboarding, learning and development, feedback and evaluation, recognition and reward, promotion and internal mobility, employee experience, safety and welfare, and retirement.</p>
+<p>People processes create aggregated workforce capabilities: engagement, culture, efficiency, leadership, innovation, and so forth. Those capabilities enable the organization to achieve its business goals: productivity, quality, and customer satisfaction, resulting in business outcomes, e.g., revenue growth and stakeholders’ return.</p>
+<p>The employee’s output varies during his employment in the organization. It is negative initially because of the costs of recruitment, onboarding, and training, and when the employee is still not productive enough. Then, a positive output rises and stabilizes until the employee gets burned out or decides to leave. Therefore, it is insightful, to sum up the net value over time, that is, what the employee produces, subtracting the employment cost, and explore the change as a result of HR intervention.</p>
+<p>For example, we can explore the impact on the total employee outputs when our interventions shorten the time to productivity, reach a higher result, continue improvement for a longer period, and extend the time that the employee remains in the organization.</p>
+</div>
+<div id="data-source" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Data source<a href="employee-lifetime-value.html#data-source" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The data in this use case is a simulation. However, its structure and sources are based on a real case study from a small company. It contains datasets of two hypothetical recruitment cycles in a factory: The first employee group landed jobs in the year’s first half, and the second group started in the second half.</p>
+<p>To analyze ELV, we need to integrate each group’s data from different sources. Specifically, some sources include information about employment costs, while others have output records. In real life, we combine data from the core HR platform, payment platform, and business unit.</p>
+<p>Assuming that no People Analytics platform automates data integration from different sources, the first step in this usecase would be choosing the relevant records from each platform and combining them all.</p>
 
+</div>
 </div>
             </section>
 
