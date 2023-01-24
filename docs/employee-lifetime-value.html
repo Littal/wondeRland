@@ -23,7 +23,7 @@
 <meta name="author" content="Littal Shemer Haim" />
 
 
-<meta name="date" content="2023-01-22" />
+<meta name="date" content="2023-01-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -175,12 +175,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#the-use-case"><i class="fa fa-check"></i><b>3.1.1</b> The use case</a></li>
 <li class="chapter" data-level="3.1.2" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#data-source"><i class="fa fa-check"></i><b>3.1.2</b> Data source</a></li>
+<li class="chapter" data-level="3.1.3" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#hr-briefing"><i class="fa fa-check"></i><b>3.1.3</b> HR briefing</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html"><i class="fa fa-check"></i><b>3.2</b> Employee Absenteeism</a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#the-use-case-1"><i class="fa fa-check"></i><b>3.2.1</b> The use case</a></li>
 <li class="chapter" data-level="3.2.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#data-source-1"><i class="fa fa-check"></i><b>3.2.2</b> Data source</a></li>
-<li class="chapter" data-level="3.2.3" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#hr-briefing"><i class="fa fa-check"></i><b>3.2.3</b> HR briefing</a></li>
+<li class="chapter" data-level="3.2.3" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#hr-briefing-1"><i class="fa fa-check"></i><b>3.2.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.2.4" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analytics-methods"><i class="fa fa-check"></i><b>3.2.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.2.5" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analysis-using-r"><i class="fa fa-check"></i><b>3.2.5</b> Analysis using R</a></li>
 <li class="chapter" data-level="3.2.6" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#storytelling-with-data"><i class="fa fa-check"></i><b>3.2.6</b> Storytelling with data</a></li>
@@ -190,7 +191,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#the-use-case-2"><i class="fa fa-check"></i><b>3.3.1</b> The use case</a></li>
 <li class="chapter" data-level="3.3.2" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#data-source-2"><i class="fa fa-check"></i><b>3.3.2</b> Data source</a></li>
-<li class="chapter" data-level="3.3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#hr-briefing-1"><i class="fa fa-check"></i><b>3.3.3</b> HR briefing</a></li>
+<li class="chapter" data-level="3.3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#hr-briefing-2"><i class="fa fa-check"></i><b>3.3.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.3.4" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analytics-methods-1"><i class="fa fa-check"></i><b>3.3.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.3.5" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analysis-using-r-1"><i class="fa fa-check"></i><b>3.3.5</b> Analysis using R</a></li>
 <li class="chapter" data-level="3.3.6" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#storytelling-with-data-1"><i class="fa fa-check"></i><b>3.3.6</b> Storytelling with data</a></li>
@@ -240,8 +241,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="data-source" class="section level3 hasAnchor" number="3.1.2">
 <h3><span class="header-section-number">3.1.2</span> Data source<a href="employee-lifetime-value.html#data-source" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The data in this use case is a simulation. However, its structure and sources are based on a real case study from a small company. It contains datasets of two hypothetical recruitment cycles in a factory: The first employee group landed jobs in the year’s first half, and the second group started in the second half.</p>
-<p>To analyze ELV, we need to integrate each group’s data from different sources. Specifically, some sources include information about employment costs, while others have output records. In real life, we combine data from the core HR platform, payment platform, and business unit.</p>
-<p>Assuming that no People Analytics platform automates data integration from different sources, the first step in this usecase would be choosing the relevant records from each platform and combining them all.</p>
+<p>To analyze ELV, we need to integrate each group’s data from different sources. Specifically, some sources include information about employment costs, while others have output records. In real life, we combine data from the core HR platform, payment platform, and records about performance and productivity that the business unit collects.</p>
+<p>Assuming no People Analytics platform automates data integration from different sources, the first step in this use case would be choosing the relevant records from each platform and combining them all. We should also manually add information about the costs of people processes that may not be included in the platforms mentioned above.</p>
+</div>
+<div id="hr-briefing" class="section level3 hasAnchor" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> HR briefing<a href="employee-lifetime-value.html#hr-briefing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Suppose you are early in your journey to establish People Analytics practices as an HR leader in a corporate factory. Your management asked you to advise on low productivity and turnover challenges. You consider leveraging the scheme of ELV as a quick win because you expect it to be impactful and not too complex.</p>
+<p>The factory recruits periodically in cycles. Employees in each recruitment cycle undergo an extended training plan until they become qualified in the company manufacturing processes. However, the training program may vary in each cycle. Moreover, some improvements in recruitment processes may be introduced between cycles. Different people processes may contribute to productivity loss or employee attrition. Therefore, analyzing the ELV of various recruitment cycles may show the return on investment in each cycle.</p>
+<p>Your company did not succeed in retaining employees in a particular group for more than a year. So, your team decided to change some processes to deal with this challenge: First, you improved the recruitment process with better and more expensive assessment tools so more suitable candidates would be chosen and eventually contribute to workforce stability and productivity. Then, onboarding and training activities were split and extended for longer, so new employees would reach a higher point of fully contributing earlier in their tenure.</p>
+<p>You have records of each employee in various recruitment cycles in different platforms, some in your HR department, others in the operation and finance units. You also have information about the costs of various processes that the HR department offers. Therefore, you ask a data scientist who supports your work to combine employee records from different sources into a unified dataset that represents costs and outputs over months and analyze the ELV separately for each recruitment cycle.</p>
 
 </div>
 </div>

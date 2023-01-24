@@ -23,7 +23,7 @@
 <meta name="author" content="Littal Shemer Haim" />
 
 
-<meta name="date" content="2023-01-22" />
+<meta name="date" content="2023-01-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -175,12 +175,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#the-use-case"><i class="fa fa-check"></i><b>3.1.1</b> The use case</a></li>
 <li class="chapter" data-level="3.1.2" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#data-source"><i class="fa fa-check"></i><b>3.1.2</b> Data source</a></li>
+<li class="chapter" data-level="3.1.3" data-path="employee-lifetime-value.html"><a href="employee-lifetime-value.html#hr-briefing"><i class="fa fa-check"></i><b>3.1.3</b> HR briefing</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html"><i class="fa fa-check"></i><b>3.2</b> Employee Absenteeism</a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#the-use-case-1"><i class="fa fa-check"></i><b>3.2.1</b> The use case</a></li>
 <li class="chapter" data-level="3.2.2" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#data-source-1"><i class="fa fa-check"></i><b>3.2.2</b> Data source</a></li>
-<li class="chapter" data-level="3.2.3" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#hr-briefing"><i class="fa fa-check"></i><b>3.2.3</b> HR briefing</a></li>
+<li class="chapter" data-level="3.2.3" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#hr-briefing-1"><i class="fa fa-check"></i><b>3.2.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.2.4" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analytics-methods"><i class="fa fa-check"></i><b>3.2.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.2.5" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#analysis-using-r"><i class="fa fa-check"></i><b>3.2.5</b> Analysis using R</a></li>
 <li class="chapter" data-level="3.2.6" data-path="employee-absenteeism.html"><a href="employee-absenteeism.html#storytelling-with-data"><i class="fa fa-check"></i><b>3.2.6</b> Storytelling with data</a></li>
@@ -190,7 +191,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#the-use-case-2"><i class="fa fa-check"></i><b>3.3.1</b> The use case</a></li>
 <li class="chapter" data-level="3.3.2" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#data-source-2"><i class="fa fa-check"></i><b>3.3.2</b> Data source</a></li>
-<li class="chapter" data-level="3.3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#hr-briefing-1"><i class="fa fa-check"></i><b>3.3.3</b> HR briefing</a></li>
+<li class="chapter" data-level="3.3.3" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#hr-briefing-2"><i class="fa fa-check"></i><b>3.3.3</b> HR briefing</a></li>
 <li class="chapter" data-level="3.3.4" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analytics-methods-1"><i class="fa fa-check"></i><b>3.3.4</b> Analytics methods</a></li>
 <li class="chapter" data-level="3.3.5" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#analysis-using-r-1"><i class="fa fa-check"></i><b>3.3.5</b> Analysis using R</a></li>
 <li class="chapter" data-level="3.3.6" data-path="gender-pay-gap.html"><a href="gender-pay-gap.html#storytelling-with-data-1"><i class="fa fa-check"></i><b>3.3.6</b> Storytelling with data</a></li>
@@ -243,8 +244,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Secondly, in many organizations, the data about employees’ occupation, seniority, gender, mode of employment, and salary details are likely to be stored in more than one platform, for example, the HR platform and payroll software. Moreover, there may be more than one payroll system in global organizations, and it is necessary to merge the data and manipulate it for a unified currency. If your platforms are not integrated, you must incorporate data from different sources for your project and make sure that your process is reproducible.</p>
 <p>Lastly, If you’d look at the CSV file for this demo, you’d immediately see - It is tidy data! It assigns each row to an employee and each column to a variable. Each cell represents only one value specific to one employee and one variable. Of course, the data you pull out for analysis may not be so neat in real-life situations. There will be duplicate records, missing entries, typos, and more. Your data scientist will need to clean and prepare the data for the project. This work may be tedious, but the systematic errors you may find will help you establish better maintenance practices and improve the data over time. It would be helpful beyond best practice because more and more countries regulate the gender pay gap.</p>
 </div>
-<div id="hr-briefing-1" class="section level3 hasAnchor" number="3.3.3">
-<h3><span class="header-section-number">3.3.3</span> HR briefing<a href="gender-pay-gap.html#hr-briefing-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="hr-briefing-2" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> HR briefing<a href="gender-pay-gap.html#hr-briefing-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Suppose you are an HR leader in a municipal authority organization. Like many public organizations, your employer is subjected to strict regulations regarding equal pay. However, only going beyond the basic comparison between men and women will enable you to spot patterns of bias and reach some actionable insights. Therefore, you decide to shed light on the still-existing pay gap, understand its factors, direct your intervention, and guarantee that you discuss insights in a broader context of the business and workforce markets. In other words, you decide to go beyond reporting and go the extra mile to explore the data.</p>
 <p>What is the difference between reporting and exploring? To explore data, you must have an analytical mindset. It enables you to analyze information and identify patterns in the data to solve problems. So you use your curiosity by asking the question, “why?”. It will enable you to tell a straightforward story, impact any topic related to people, track improvement and progress, and certainly contribute to closing the gender pay gap.</p>
 <p>You may already have dashboards that enable you to present different metrics and KPIs and answer the questions: Did we reach our goals? How far are we from achieving our goals? However, by using dashboards, you can’t answer the question: Why? Instead, you need to analyze the factors that drive those KPIs presented on your dashboards. Therefore, you will explore the data beyond finding differences between men and women in compensation and explore how those differences occurred, implying what you should do about it. You’ll reach actionable insights by actively working with your data scientist. When you ask “why,” the data scientist will provide answers based on the data.</p>

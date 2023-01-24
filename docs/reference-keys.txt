@@ -24,10 +24,11 @@ people-analytics-methods-and-use-cases
 employee-lifetime-value
 the-use-case
 data-source
+hr-briefing
 employee-absenteeism
 the-use-case-1
 data-source-1
-hr-briefing
+hr-briefing-1
 analytics-methods
 analysis-using-r
 storytelling-with-data
@@ -35,7 +36,7 @@ conclusions
 gender-pay-gap
 the-use-case-2
 data-source-2
-hr-briefing-1
+hr-briefing-2
 analytics-methods-1
 analysis-using-r-1
 storytelling-with-data-1

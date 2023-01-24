@@ -20,11 +20,22 @@ For example, we can explore the impact on the total employee outputs when our in
 
 ### Data source
 
-The data in this use case is a simulation. However, its structure and sources are based on a real case study from a small company. It contains datasets of two hypothetical recruitment cycles in a factory: The first employee group landed jobs in the year's first half, and the second group started in the second half.
+The data in this use case is a simulation. However, its structure and sources are based on a real case study from a small company. It contains datasets of two hypothetical recruitment cycles in a factory: The first employee group landed jobs in the year's first half, and the second group started in the second half. 
 
-To analyze ELV, we need to integrate each group's data from different sources. Specifically, some sources include information about employment costs, while others have output records. In real life, we combine data from the core HR platform, payment platform, and business unit.
+To analyze ELV, we need to integrate each group's data from different sources. Specifically, some sources include information about employment costs, while others have output records. In real life, we combine data from the core HR platform, payment platform, and records about performance and productivity that the business unit collects.
 
-Assuming that no People Analytics platform automates data integration from different sources, the first step in this usecase would be choosing the relevant records from each platform and combining them all.  
+Assuming no People Analytics platform automates data integration from different sources, the first step in this use case would be choosing the relevant records from each platform and combining them all. We should also manually add information about the costs of people processes that may not be included in the platforms mentioned above. 
+ 
 
+
+### HR briefing
+
+Suppose you are early in your journey to establish People Analytics practices as an HR leader in a corporate factory. Your management asked you to advise on low productivity and turnover challenges. You consider leveraging the scheme of ELV as a quick win because you expect it to be impactful and not too complex. 
+
+The factory recruits periodically in cycles. Employees in each recruitment cycle undergo an extended training plan until they become qualified in the company manufacturing processes. However, the training program may vary in each cycle. Moreover, some improvements in recruitment processes may be introduced between cycles. Different people processes may contribute to productivity loss or employee attrition. Therefore, analyzing the ELV of various recruitment cycles may show the return on investment in each cycle.
+
+Your company did not succeed in retaining employees in a particular group for more than a year. So, your team decided to change some processes to deal with this challenge: First, you improved the recruitment process with better and more expensive assessment tools so more suitable candidates would be chosen and eventually contribute to workforce stability and productivity. Then, onboarding and training activities were split and extended for longer, so new employees would reach a higher point of fully contributing earlier in their tenure. 
+
+You have records of each employee in various recruitment cycles in different platforms, some in your HR department, others in the operation and finance units. You also have information about the costs of various processes that the HR department offers. Therefore, you ask a data scientist who supports your work to combine employee records from different sources into a unified dataset that represents costs and outputs over months and analyze the ELV separately for each recruitment cycle.
 
 
