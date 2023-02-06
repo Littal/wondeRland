@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.10 Exit Surveys | Littalics in wondeRland</title>
-  <meta name="description" content="3.10 Exit Surveys | Littalics in wondeRland" />
+  <title>3.2 Candidate Evaluation | Littalics in wondeRland</title>
+  <meta name="description" content="3.2 Candidate Evaluation | Littalics in wondeRland" />
   <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.10 Exit Surveys | Littalics in wondeRland" />
+  <meta property="og:title" content="3.2 Candidate Evaluation | Littalics in wondeRland" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.10 Exit Surveys | Littalics in wondeRland" />
+  <meta name="twitter:title" content="3.2 Candidate Evaluation | Littalics in wondeRland" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="teams-and-collaboration.html"/>
-<link rel="next" href="the-future-of-people-analytics.html"/>
+<link rel="prev" href="employee-lifetime-value.html"/>
+<link rel="next" href="employee-absenteeism.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -235,18 +235,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="exit-surveys" class="section level2 hasAnchor" number="3.10">
-<h2><span class="header-section-number">3.10</span> Exit Surveys<a href="exit-surveys.html#exit-surveys" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>(Text and Categorical data)</p>
+<div id="candidate-evaluation" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Candidate Evaluation<a href="candidate-evaluation.html#candidate-evaluation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="the-use-case-1" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> The use case<a href="candidate-evaluation.html#the-use-case-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="data-source-1" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Data source<a href="candidate-evaluation.html#data-source-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The dataset I sourced in this use case was created as a partial dataset of <a href="https://blog-about-people-analytics.netlify.app/posts/2022-10-24-police-cadet-evaluation-dataset/">police cadet evaluations</a>, including two thousand observations of cadets’ attributes. (See more information in the dataset appendix).</p>
+<p>To fit the dataset for this use case, I re-coded some attributes. Eventually, I included the following: demographics at the course start (age, gender, parenthood, criminal record), occupational background and achievements (former academic years, former experience years, course graduation score), and performance score (average evaluation of senior police officers committee).</p>
+<p>Since my analysis aims to provide actionable insights to a hypothetical HR leader, I’ll go the extra mile beyond visually exploring the differences between successful vs. failing officers, as found in the original publication. I’ll question the impact of attributes on the recruitment process in general.</p>
+</div>
+<div id="hr-briefing-1" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> HR briefing<a href="candidate-evaluation.html#hr-briefing-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Suppose you are a strategic workforce planer in the Police HR department. A recent challenge in your organization is a high proportion of low evaluations among officers. So you decide to explore how former recruitment processes influence performance. Mainly, you suspect that part of the issue is related to old processes of cadet selection that were neglected to be updated.</p>
+<p>In addition to data about officers’ evaluations, you have records of police cadets’ attributes that were collected before their course. You also have records of their final course grades. You decide to analyze the associations between the present officers’ evaluation and their former success in the course. Your concern is that the organization failed to select cadets and assign course graduates. Furthermore, you are curious about the evaluation validity. You suspect it might be biased, so you hope to dismiss such concern.</p>
+<p>Therefore, you ask a data scientist who supports your work to explore the officers’ evaluation to discover its factors and potential biases. You aim to develop insights and recommendations about attributes that may be a better basis for cadet selections and graduation. First, you’d like to better understand the associations by visualizing them. Then, you’d like to point to significant success factors and potential bias.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="teams-and-collaboration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-future-of-people-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="employee-lifetime-value.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="employee-absenteeism.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -277,7 +291,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/Littal/wondeRland/edit/master/3.10-Exit-Surveys.Rmd",
+"link": "https://github.com/Littal/wondeRland/edit/master/3.02-Candidate-Evaluation.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -285,7 +299,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/Littal/wondeRland/blob/master/3.10-Exit-Surveys.Rmd",
+"link": "https://github.com/Littal/wondeRland/blob/master/3.02-Candidate-Evaluation.Rmd",
 "text": null
 },
 "download": null,

@@ -1,0 +1,23 @@
+## Candidate Evaluation
+
+
+### The use case 
+
+
+### Data source
+
+The dataset I sourced in this use case was created as a partial dataset of [police cadet evaluations](https://blog-about-people-analytics.netlify.app/posts/2022-10-24-police-cadet-evaluation-dataset/), including two thousand observations of cadets' attributes. (See more information in the dataset appendix). 
+
+To fit the dataset for this use case, I re-coded some attributes. Eventually, I included the following: demographics at the course start (age, gender, parenthood, criminal record), occupational background and achievements (former academic years, former experience years, course graduation score), and performance score (average evaluation of senior police officers committee).
+
+Since my analysis aims to provide actionable insights to a hypothetical HR leader, I'll go the extra mile beyond visually exploring the differences between successful vs. failing officers, as found in the original publication. I'll question the impact of attributes on the recruitment process in general. 
+
+
+
+### HR briefing
+
+Suppose you are a strategic workforce planer in the Police HR department. A recent challenge in your organization is a high proportion of low evaluations among officers. So you decide to explore how former recruitment processes influence performance. Mainly, you suspect that part of the issue is related to old processes of cadet selection that were neglected to be updated. 
+
+In addition to data about officers' evaluations, you have records of police cadets' attributes that were collected before their course. You also have records of their final course grades. You decide to analyze the associations between the present officers' evaluation and their former success in the course. Your concern is that the organization failed to select cadets and assign course graduates. Furthermore, you are curious about the evaluation validity. You suspect it might be biased, so you hope to dismiss such concern. 
+
+Therefore, you ask a data scientist who supports your work to explore the officers' evaluation to discover its factors and potential biases. You aim to develop insights and recommendations about attributes that may be a better basis for cadet selections and graduation. First, you'd like to better understand the associations by visualizing them. Then, you'd like to point to significant success factors and potential bias. 
